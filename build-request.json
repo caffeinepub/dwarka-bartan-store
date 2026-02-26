@@ -1,41 +1,166 @@
 {
   "kind": "build_request",
-  "title": "Fix Google Maps embed position/coordinates in LocationSection",
+  "title": "Replace all broken product images with AI-generated illustrations across all product sections",
   "projectName": "Dwarka Bartan Store",
-  "priority": "normal",
+  "priority": "high",
   "requirements": [
     {
-      "id": "REQ-32",
-      "text": "In LocationSection.tsx, fix the Google Maps iframe so it correctly displays the map centered on the right coordinates for Dwarka Bartan Store, Akhnoor Palace, Jammu. The iframe embed URL must use a proper Google Maps embed URL (e.g., https://www.google.com/maps/embed?pb=... or the /embed?q= variant) that points accurately to the store's location at Akhnoor Palace, Jammu — not a generic or incorrect pin. The 'Get Directions' button must continue to link to https://maps.app.goo.gl/oxEd9nPJ4Ty4pYQL7. Verify the iframe renders the map at the correct physical position visually.",
+      "id": "REQ-33",
+      "text": "In KitchenUtensils.tsx, replace all broken or missing product image references with the newly generated static image assets stored in frontend/public/assets/generated/. Each of the 5 product cards must display its corresponding generated image: Milton Insignia Casserole, Crystal Wooden Serving Trays, Milton Pearl Thermoware Insulated Casserole, Senso Finger Chipser, and Cello Puro Kids & Junior Water Bottles. Use <img> tags with correct relative paths pointing to frontend/public/assets/generated/.",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-latest"
+          "msg-1"
         ],
         "quotes": [
-          "Sorry but no it is not at the correct position"
+          "the photos are not visible",
+          "paste some of the photos by your own to the website",
+          "according to the kitchen use utensils and the things"
         ]
       },
       "acceptanceCriteria": [
-        "The embedded Google Maps iframe in LocationSection.tsx visually shows a map pin at or near Akhnoor Palace, Jammu — not a different or default location.",
-        "The iframe uses a valid Google Maps embed URL (using /maps/embed? format) that loads correctly without errors.",
-        "The 'Get Directions' button links to https://maps.app.goo.gl/oxEd9nPJ4Ty4pYQL7.",
-        "The map section is visible and properly positioned within the Location section layout."
+        "All 5 product cards in the Kitchen Utensils section display a visible, correctly loaded image",
+        "Image paths correctly resolve to frontend/public/assets/generated/ filenames",
+        "No broken image icons appear in the Kitchen Utensils section"
+      ]
+    },
+    {
+      "id": "REQ-34",
+      "text": "In HouseholdProducts.tsx, replace the broken or missing dustbin product image reference with the newly generated static image asset in frontend/public/assets/generated/. The single product card must display the colorful dustbins image visibly using an <img> tag with the correct path.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "the photos are not visible",
+          "according to the sections display all the things because the pictures are not visible"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The Household Products section displays a visible, correctly loaded dustbin image",
+        "No broken image icon appears in the Household Products section"
+      ]
+    },
+    {
+      "id": "REQ-35",
+      "text": "In ProductCategories.tsx, replace all broken or missing category card images with the newly generated static image assets in frontend/public/assets/generated/. Each of the 6 category cards (Stainless Steel Utensils, Pressure Cookers, Cookware Sets, Kitchen Tools, Plastic Household Items, Gift Items) must display a visible generated image that is visually appropriate for that category.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "the photos are not visible",
+          "according to the sections display all the things because the pictures are not visible"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All 6 product category cards display a visible, relevant image",
+        "No broken image icons appear in the Product Categories section",
+        "Image paths resolve correctly to frontend/public/assets/generated/"
+      ]
+    },
+    {
+      "id": "REQ-36",
+      "text": "In the Featured Products Showcase section (if it exists as a component), replace all broken or missing product images with the newly generated static image assets in frontend/public/assets/generated/. Each of the 8 product cards (Steel Tiffin Box, Pressure Cooker 5L, Non-Stick Kadai, Steel Glass Set, Casserole Set, Mixing Bowls Set, Vegetable Chopper, Stainless Steel Thali) must display a visible generated image appropriate for that product.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "the photos are not visible",
+          "according to the sections display all the things because the pictures are not visible"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All 8 featured product cards display a visible, relevant image",
+        "No broken image icons appear in the Featured Products section",
+        "Image paths resolve correctly to frontend/public/assets/generated/"
+      ]
+    },
+    {
+      "id": "REQ-37",
+      "text": "In the Photo Gallery section, replace all broken or missing gallery images with the newly generated static image assets in frontend/public/assets/generated/. All 6 gallery grid items must display visible product or store images.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "the photos are not visible",
+          "according to the sections display all the things because the pictures are not visible"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All 6 gallery images are visible and load correctly",
+        "No broken image icons appear in the Photo Gallery section",
+        "Image paths resolve correctly to frontend/public/assets/generated/"
+      ]
+    },
+    {
+      "id": "REQ-38",
+      "text": "In HeroSection.tsx, replace the broken or missing hero product image with the newly generated hero image asset in frontend/public/assets/generated/. The hero showcase card on the right side of the split layout must display the hero product image visibly.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "the photos are not visible",
+          "according to the sections display all the things because the pictures are not visible"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The hero section displays a visible, correctly loaded product image",
+        "No broken image icon appears in the hero section",
+        "Image path resolves correctly to frontend/public/assets/generated/"
       ]
     }
   ],
   "constraints": [
-    "Do not modify any other section or component outside of LocationSection.tsx.",
-    "Do not change the 'Get Directions' button link — it must remain https://maps.app.goo.gl/oxEd9nPJ4Ty4pYQL7.",
-    "Do not alter backend logic."
+    "All product images must be generated and saved as static assets under frontend/public/assets/generated/ — do not fetch images from external URLs at runtime",
+    "Image filenames used in component <img> src attributes must exactly match the generated asset filenames",
+    "Do not modify any files under frontend/src/hooks/ or frontend/src/main.tsx",
+    "Do not modify backend logic — this is a frontend-only fix"
   ],
   "nonGoals": [
-    "Changing any other address text or business hours.",
-    "Updating any other component beyond LocationSection.tsx.",
-    "Adding new sections or features."
+    "Adding new product sections or changing product descriptions",
+    "Changing the visual theme or color palette",
+    "Modifying backend canister logic",
+    "Implementing a CMS or dynamic image upload system"
   ],
   "imageRequirements": {
-    "required": [],
+    "required": [
+      "Milton Insignia Casserole — a stainless steel insulated casserole with a premium glossy lid and elegant floral design on a warm cream background (milton-insignia-casserole.dim_600x600.png)",
+      "Crystal wooden serving tray — a natural wood rectangular serving tray with handles, set on a rustic kitchen surface (crystal-wooden-serving-tray.dim_600x600.png)",
+      "Milton Pearl Thermoware Insulated Casserole — a pastel-colored thermoware casserole with a dome lid and modern shape on a light background (milton-pearl-thermoware-casserole.dim_600x600.png)",
+      "Senso Finger Chipser — a compact push-action vegetable cutter with stainless steel blades and a white/green plastic body (senso-finger-chipser.dim_600x600.png)",
+      "Cello Puro Kids water bottles — a set of colorful leak-proof water bottles in red, blue, green and yellow on a white background (cello-puro-kids-water-bottles.dim_600x600.png)",
+      "Colorful plastic dustbins — four swing-top dustbins in red, blue, yellow, and black arranged together on a clean white background (colorful-plastic-dustbins.dim_600x600.png)",
+      "Stainless steel utensils collection — a flat-lay arrangement of polished steel spoons, ladles, and tongs on a dark surface (category-stainless-steel-utensils.dim_600x400.png)",
+      "Pressure cooker — a silver aluminum pressure cooker with a black handle and safety valve on a kitchen counter (category-pressure-cookers.dim_600x400.png)",
+      "Cookware set — a matching set of non-stick pots and pans in dark gray with glass lids arranged neatly (category-cookware-sets.dim_600x400.png)",
+      "Kitchen tools collection — a variety of colorful kitchen gadgets including peelers, graters, and spatulas on a wooden background (category-kitchen-tools.dim_600x400.png)",
+      "Plastic household items — assorted colorful plastic storage containers, water jugs, and organizers on a shelf (category-plastic-household.dim_600x400.png)",
+      "Gift items — a decorative gift hamper with wrapped kitchen items, ribbons, and a festive presentation box (category-gift-items.dim_600x400.png)",
+      "Steel tiffin box — a shiny stainless steel multi-tier tiffin box with latched clasps on a white background (product-steel-tiffin-box.dim_600x600.png)",
+      "Pressure cooker 5 litre — a large 5L stainless steel pressure cooker with safety valve and bakelite handle (product-pressure-cooker-5l.dim_600x600.png)",
+      "Non-stick kadai — a deep black non-stick kadai with two side handles and a tempered glass lid (product-non-stick-kadai.dim_600x600.png)",
+      "Steel glass set — a set of six shiny stainless steel drinking glasses arranged in a row on a white surface (product-steel-glass-set.dim_600x600.png)",
+      "Casserole set — a set of three nested stainless steel casseroles with matching floral-patterned lids (product-casserole-set.dim_600x600.png)",
+      "Mixing bowls set — a set of five graduated stainless steel mixing bowls stacked together (product-mixing-bowls-set.dim_600x600.png)",
+      "Vegetable chopper — a transparent plastic vegetable chopper with a pull-cord mechanism and stainless steel blades (product-vegetable-chopper.dim_600x600.png)",
+      "Stainless steel thali — a large round stainless steel thali plate with a raised rim on a clean white background (product-stainless-steel-thali.dim_600x600.png)",
+      "Hero product showcase image — an artfully arranged display of premium kitchen utensils, cookware, and casseroles on an emerald green background with warm lighting (hero-utensils.dim_1200x600.png)",
+      "Photo gallery image 1 — a neatly organized store shelf displaying rows of stainless steel utensils and cookware (gallery-store-shelf.dim_800x600.png)",
+      "Photo gallery image 2 — a close-up of gleaming stainless steel pressure cookers stacked on a display (gallery-pressure-cookers.dim_800x600.png)",
+      "Photo gallery image 3 — a flat-lay of colorful kitchen tools and gadgets arranged on a wooden surface (gallery-kitchen-tools.dim_800x600.png)",
+      "Photo gallery image 4 — a curated gift hamper with premium kitchen items wrapped in festive packaging (gallery-gift-hamper.dim_800x600.png)",
+      "Photo gallery image 5 — a set of elegant casseroles and serving dishes displayed on a marble surface (gallery-casseroles.dim_800x600.png)",
+      "Photo gallery image 6 — a vibrant arrangement of plastic household products in multiple colors displayed on store shelves (gallery-household-products.dim_800x600.png)"
+    ],
     "edits": []
   }
 }

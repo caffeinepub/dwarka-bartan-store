@@ -1,22 +1,110 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Fix Google Maps embed position/coordinates in LocationSection",
+  "title": "Replace all broken product images with AI-generated illustrations across all product sections",
   "requirements": [
     {
-      "id": "REQ-32",
-      "summary": "Fix the Google Maps iframe in LocationSection.tsx to correctly display the map centered on Dwarka Bartan Store at Akhnoor Palace, Jammu, using a proper embed URL that shows the accurate physical location",
+      "id": "REQ-33",
+      "summary": "Replace broken product images in KitchenUtensils.tsx with generated assets for all 5 product cards",
       "acceptanceCriteria": [
-        "The embedded Google Maps iframe in LocationSection.tsx visually shows a map pin at or near Akhnoor Palace, Jammu — not a different or default location.",
-        "The iframe uses a valid Google Maps embed URL (using /maps/embed? format) that loads correctly without errors.",
-        "The 'Get Directions' button links to https://maps.app.goo.gl/oxEd9nPJ4Ty4pYQL7.",
-        "The map section is visible and properly positioned within the Location section layout."
+        "All 5 product cards in the Kitchen Utensils section display a visible, correctly loaded image",
+        "Image paths correctly resolve to frontend/public/assets/generated/ filenames",
+        "No broken image icons appear in the Kitchen Utensils section"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/components/LocationSection.tsx",
+          "path": "frontend/src/components/KitchenUtensils.tsx",
           "operation": "modify",
-          "description": "Update the Google Maps iframe src attribute to use a proper Google Maps embed URL that accurately centers on Dwarka Bartan Store's location at Akhnoor Palace, Jammu. Replace the current iframe src with a valid /maps/embed URL format (e.g., https://www.google.com/maps/embed?pb=... or https://www.google.com/maps/embed/v1/place?key=...&q=...) that corresponds to the correct geographic coordinates or place ID for the store. Ensure the 'Get Directions' button continues to link to https://maps.app.goo.gl/oxEd9nPJ4Ty4pYQL7. Verify visually that the map renders at the correct physical position showing Akhnoor Palace, Jammu area."
+          "description": "Replace all broken product image src attributes with the correct paths to generated assets: milton-insignia-casserole.dim_600x600.png for Milton Insignia Casserole, crystal-wooden-serving-tray.dim_600x600.png for Crystal Wooden Serving Trays, milton-pearl-thermoware-casserole.dim_600x600.png for Milton Pearl Thermoware Insulated Casserole, senso-finger-chipser.dim_600x600.png for Senso Finger Chipser, and cello-puro-kids-water-bottles.dim_600x600.png for Cello Puro Kids & Junior Water Bottles. Use relative paths starting with /assets/generated/ to reference the static assets in frontend/public/assets/generated/."
+        }
+      ]
+    },
+    {
+      "id": "REQ-34",
+      "summary": "Replace broken dustbin image in HouseholdProducts.tsx with generated asset",
+      "acceptanceCriteria": [
+        "The Household Products section displays a visible, correctly loaded dustbin image",
+        "No broken image icon appears in the Household Products section"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/HouseholdProducts.tsx",
+          "operation": "modify",
+          "description": "Replace the broken dustbin product image src attribute with the correct path to the generated asset frontend/public/assets/generated/colorful-plastic-dustbins.dim_600x600.png. Use the relative path /assets/generated/colorful-plastic-dustbins.dim_600x600.png in the img element."
+        }
+      ]
+    },
+    {
+      "id": "REQ-35",
+      "summary": "Replace broken category images in ProductCategories.tsx with generated assets for all 6 categories",
+      "acceptanceCriteria": [
+        "All 6 product category cards display a visible, relevant image",
+        "No broken image icons appear in the Product Categories section",
+        "Image paths resolve correctly to frontend/public/assets/generated/"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ProductCategories.tsx",
+          "operation": "modify",
+          "description": "Replace all broken category image src attributes with the correct paths to generated assets: category-stainless-steel-utensils.dim_600x400.png for Stainless Steel Utensils, category-pressure-cookers.dim_600x400.png for Pressure Cookers, category-cookware-sets.dim_600x400.png for Cookware Sets, category-kitchen-tools.dim_600x400.png for Kitchen Tools, category-plastic-household.dim_600x400.png for Plastic Household Items, and category-gift-items.dim_600x400.png for Gift Items. Use relative paths starting with /assets/generated/ to reference the static assets in frontend/public/assets/generated/."
+        }
+      ]
+    },
+    {
+      "id": "REQ-36",
+      "summary": "Replace broken featured product images with generated assets for all 8 products in the showcase section",
+      "acceptanceCriteria": [
+        "All 8 featured product cards display a visible, relevant image",
+        "No broken image icons appear in the Featured Products section",
+        "Image paths resolve correctly to frontend/public/assets/generated/"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Identify the Featured Products Showcase section component (if it exists as a separate component imported into App.tsx). If the featured products are rendered inline or through an existing component, note the component name for the next file operation."
+        },
+        {
+          "path": "frontend/src/components/FeaturedProducts.tsx",
+          "operation": "modify",
+          "description": "Replace all broken featured product image src attributes with the correct paths to generated assets: product-steel-tiffin-box.dim_600x600.png for Steel Tiffin Box, product-pressure-cooker-5l.dim_600x600.png for Pressure Cooker 5L, product-non-stick-kadai.dim_600x600.png for Non-Stick Kadai, product-steel-glass-set.dim_600x600.png for Steel Glass Set, product-casserole-set.dim_600x600.png for Casserole Set, product-mixing-bowls-set.dim_600x600.png for Mixing Bowls Set, product-vegetable-chopper.dim_600x600.png for Vegetable Chopper, and product-stainless-steel-thali.dim_600x600.png for Stainless Steel Thali. Use relative paths starting with /assets/generated/ to reference the static assets in frontend/public/assets/generated/. If this component does not exist and the featured products are part of KitchenUtensils or another existing component, merge this operation with the relevant component's existing file operation instead."
+        }
+      ]
+    },
+    {
+      "id": "REQ-37",
+      "summary": "Replace broken gallery images with generated assets for all 6 gallery grid items in the Photo Gallery section",
+      "acceptanceCriteria": [
+        "All 6 gallery images are visible and load correctly",
+        "No broken image icons appear in the Photo Gallery section",
+        "Image paths resolve correctly to frontend/public/assets/generated/"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Identify the Photo Gallery section component (if it exists as a separate component imported into App.tsx). If the gallery is rendered inline or through an existing component, note the component name for the next file operation."
+        },
+        {
+          "path": "frontend/src/components/PhotoGallery.tsx",
+          "operation": "modify",
+          "description": "Replace all broken gallery image src attributes with the correct paths to generated assets: gallery-store-shelf.dim_800x600.png for gallery image 1, gallery-pressure-cookers.dim_800x600.png for gallery image 2, gallery-kitchen-tools.dim_800x600.png for gallery image 3, gallery-gift-hamper.dim_800x600.png for gallery image 4, gallery-casseroles.dim_800x600.png for gallery image 5, and gallery-household-products.dim_800x600.png for gallery image 6. Use relative paths starting with /assets/generated/ to reference the static assets in frontend/public/assets/generated/. If this component does not exist and the gallery is part of another existing component, merge this operation with the relevant component's existing file operation instead."
+        }
+      ]
+    },
+    {
+      "id": "REQ-38",
+      "summary": "Replace broken hero product image in HeroSection.tsx with generated hero asset",
+      "acceptanceCriteria": [
+        "The hero section displays a visible, correctly loaded product image",
+        "No broken image icon appears in the hero section",
+        "Image path resolves correctly to frontend/public/assets/generated/"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/HeroSection.tsx",
+          "operation": "modify",
+          "description": "Replace the broken hero product image src attribute with the correct path to the generated asset frontend/public/assets/generated/hero-utensils.dim_1200x600.png. Use the relative path /assets/generated/hero-utensils.dim_1200x600.png in the img element for the hero showcase card on the right side of the split layout."
         }
       ]
     }

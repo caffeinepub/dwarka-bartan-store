@@ -13,14 +13,14 @@ const products: ProductCard[] = [
   {
     title: 'Stainless Steel Utensils',
     description: 'Premium grade stainless steel bowls, plates, glasses, and serving sets. Durable, hygienic, and rust-free for everyday use.',
-    image: '/assets/generated/category-ss-utensils.dim_600x400.png',
+    image: '/assets/generated/category-stainless-steel-utensils.dim_600x400.png',
     waMessage: 'Hi! I am interested in Stainless Steel Utensils at Dwarka Bartan Store, Akhnoor. Please share details and pricing.',
     alt: 'Stainless steel utensils shop Akhnoor - bowls, plates, glasses',
   },
   {
     title: 'Pressure Cookers',
     description: 'Top-brand pressure cookers for fast, safe, and energy-efficient cooking. Available in all sizes for every family.',
-    image: '/assets/generated/category-pressure-cooker.dim_600x400.png',
+    image: '/assets/generated/category-pressure-cookers.dim_600x400.png',
     waMessage: 'Hi! I am looking for Pressure Cookers at Dwarka Bartan Store, Akhnoor. Please share available sizes and prices.',
     alt: 'Pressure cooker shop in Akhnoor - all sizes available',
   },
@@ -41,7 +41,7 @@ const products: ProductCard[] = [
   {
     title: 'Plastic Household Items',
     description: 'Colorful, durable plastic storage containers, buckets, and household essentials at the best prices in Akhnoor.',
-    image: '/assets/generated/category-plastic-items.dim_600x400.png',
+    image: '/assets/generated/category-plastic-household.dim_600x400.png',
     waMessage: 'Hi! I am interested in Plastic Household Items at Dwarka Bartan Store, Akhnoor. Please share details.',
     alt: 'Plastic household items store Akhnoor',
   },
@@ -93,7 +93,7 @@ function ProductCard({ product, index }: { product: ProductCard; index: number }
         <img
           src={product.image}
           alt={product.alt}
-          className="product-img w-full h-full object-cover"
+          className="product-img w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
           loading="lazy"
         />
       </div>

@@ -1,25 +1,82 @@
 {
   "kind": "coverage_report",
   "version": "1.0",
-  "generatedAt": "2026-02-26T15:41:42.098Z",
+  "generatedAt": "2026-02-26T15:55:08.877Z",
   "sources": {
     "buildRequest": true,
     "implementationPlan": true
   },
   "requirements": {
-    "total": 1,
-    "implemented": 1,
+    "total": 6,
+    "implemented": 5,
     "items": [
       {
-        "id": "REQ-32",
-        "summary": "In LocationSection.tsx, fix the Google Maps iframe so it correctly displays the map centered on the right coordinates for Dwarka Bartan Store, Akhnoor Palace, Jammu. The iframe embed URL must use a proper Google Maps embed URL (e.g., https://www.google.com/maps/embed?pb=... or the /embed?q= variant) that points accurately to the store's location at Akhnoor Palace, Jammu — not a generic or incorrect pin. The 'Get Directions' button must continue to link to https://maps.app.goo.gl/oxEd9nPJ4Ty4pYQL7. Verify the iframe renders the map at the correct physical position visually.",
+        "id": "REQ-33",
+        "summary": "In KitchenUtensils.tsx, replace all broken or missing product image references with the newly generated static image assets stored in frontend/public/assets/generated/. Each of the 5 product cards must display its corresponding generated image: Milton Insignia Casserole, Crystal Wooden Serving Trays, Milton Pearl Thermoware Insulated Casserole, Senso Finger Chipser, and Cello Puro Kids & Junior Water Bottles. Use <img> tags with correct relative paths pointing to frontend/public/assets/generated/.",
         "status": "implemented",
         "plannedFiles": [
-          "frontend/src/components/LocationSection.tsx"
+          "frontend/src/components/KitchenUtensils.tsx"
         ],
         "matchedFiles": [
-          "frontend/src/components/LocationSection.tsx"
+          "frontend/src/components/KitchenUtensils.tsx"
         ]
+      },
+      {
+        "id": "REQ-34",
+        "summary": "In HouseholdProducts.tsx, replace the broken or missing dustbin product image reference with the newly generated static image asset in frontend/public/assets/generated/. The single product card must display the colorful dustbins image visibly using an <img> tag with the correct path.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/HouseholdProducts.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/HouseholdProducts.tsx"
+        ]
+      },
+      {
+        "id": "REQ-35",
+        "summary": "In ProductCategories.tsx, replace all broken or missing category card images with the newly generated static image assets in frontend/public/assets/generated/. Each of the 6 category cards (Stainless Steel Utensils, Pressure Cookers, Cookware Sets, Kitchen Tools, Plastic Household Items, Gift Items) must display a visible generated image that is visually appropriate for that category.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/ProductCategories.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/ProductCategories.tsx"
+        ]
+      },
+      {
+        "id": "REQ-36",
+        "summary": "In the Featured Products Showcase section (if it exists as a component), replace all broken or missing product images with the newly generated static image assets in frontend/public/assets/generated/. Each of the 8 product cards (Steel Tiffin Box, Pressure Cooker 5L, Non-Stick Kadai, Steel Glass Set, Casserole Set, Mixing Bowls Set, Vegetable Chopper, Stainless Steel Thali) must display a visible generated image appropriate for that product.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/App.tsx",
+          "frontend/src/components/FeaturedProducts.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/App.tsx",
+          "frontend/src/components/FeaturedProducts.tsx"
+        ]
+      },
+      {
+        "id": "REQ-37",
+        "summary": "In the Photo Gallery section, replace all broken or missing gallery images with the newly generated static image assets in frontend/public/assets/generated/. All 6 gallery grid items must display visible product or store images.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/App.tsx",
+          "frontend/src/components/PhotoGallery.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/App.tsx",
+          "frontend/src/components/PhotoGallery.tsx"
+        ]
+      },
+      {
+        "id": "REQ-38",
+        "summary": "In HeroSection.tsx, replace the broken or missing hero product image with the newly generated hero image asset in frontend/public/assets/generated/. The hero showcase card on the right side of the split layout must display the hero product image visibly.",
+        "status": "missing",
+        "plannedFiles": [
+          "frontend/src/components/HeroSection.tsx"
+        ],
+        "matchedFiles": []
       }
     ]
   },
@@ -28,7 +85,27 @@
     "feature_evidence.json",
     "frontend-file-summaries.txt",
     "frontend-implementation-plan.json",
-    "frontend/src/components/LocationSection.tsx",
+    "frontend/public/assets/generated/category-cookware-sets.dim_600x400.png",
+    "frontend/public/assets/generated/category-gift-items.dim_600x400.png",
+    "frontend/public/assets/generated/category-kitchen-tools.dim_600x400.png",
+    "frontend/public/assets/generated/category-plastic-household.dim_600x400.png",
+    "frontend/public/assets/generated/category-pressure-cookers.dim_600x400.png",
+    "frontend/public/assets/generated/category-stainless-steel-utensils.dim_600x400.png",
+    "frontend/public/assets/generated/cello-puro-kids-water-bottles.dim_600x600.png",
+    "frontend/public/assets/generated/colorful-plastic-dustbins.dim_600x600.png",
+    "frontend/public/assets/generated/crystal-wooden-serving-tray.dim_600x600.png",
+    "frontend/public/assets/generated/milton-insignia-casserole.dim_600x600.png",
+    "frontend/public/assets/generated/milton-pearl-thermoware-casserole.dim_600x600.png",
+    "frontend/public/assets/generated/product-non-stick-kadai.dim_600x600.png",
+    "frontend/public/assets/generated/product-pressure-cooker-5l.dim_600x600.png",
+    "frontend/public/assets/generated/product-steel-tiffin-box.dim_600x600.png",
+    "frontend/public/assets/generated/senso-finger-chipser.dim_600x600.png",
+    "frontend/src/App.tsx",
+    "frontend/src/components/FeaturedProducts.tsx",
+    "frontend/src/components/HouseholdProducts.tsx",
+    "frontend/src/components/KitchenUtensils.tsx",
+    "frontend/src/components/PhotoGallery.tsx",
+    "frontend/src/components/ProductCategories.tsx",
     "project_state.json",
     "scratch/component-selection.json",
     "spec.md",

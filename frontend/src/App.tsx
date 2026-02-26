@@ -2,8 +2,10 @@ import { FestiveOfferBanner } from './components/FestiveOfferBanner';
 import { Header } from './components/Header';
 import { HeroSection } from './components/HeroSection';
 import { ProductCategories } from './components/ProductCategories';
+import { FeaturedProducts } from './components/FeaturedProducts';
 import { KitchenUtensils } from './components/KitchenUtensils';
 import { HouseholdProducts } from './components/HouseholdProducts';
+import { PhotoGallery } from './components/PhotoGallery';
 import { WhyChooseUs } from './components/WhyChooseUs';
 import { CustomerReviews } from './components/CustomerReviews';
 import { LocationSection } from './components/LocationSection';
@@ -21,8 +23,10 @@ export default function App() {
       <main>
         <HeroSection />
         <ProductCategories />
+        <FeaturedProducts />
         <KitchenUtensils />
         <HouseholdProducts />
+        <PhotoGallery />
         <WhyChooseUs />
         <CustomerReviews />
         <LocationSection />

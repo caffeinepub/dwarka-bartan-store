@@ -2,10 +2,10 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-in-locationsection-tsx-fix-the-google-maps-iframe-so-it-correctly-displays-the-map-centered-on-the-right-coordinates-for-dwarka-bartan-store-akhnoor-palace-jammu-the-iframe-embed-url-must-use-a-proper-google-maps-embed-url-e-g-https-www-google-com-maps-embed-pb-or-the-embed-q-variant-that-points-accurately-to-the-store-s-location-at-akhnoor-palace-jammu-not-a-generic-or-incorrect-pin-the-get-directions-button-must-continue-to-link-to-https-maps-app-goo-gl-oxed9npj4ty4pyql7-verify-the-iframe-renders-the-map-at-the-correct-physical-position-visually",
-      "featureTitle": "In LocationSection.tsx, fix the Google Maps iframe so it correctly displays the map centered on the right coordinates for Dwarka Bartan Store, Akhnoor Palace, Jammu. The iframe embed URL must use a proper Google Maps embed URL (e.g., https://www.google.com/maps/embed?pb=... or the /embed?q= variant) that points accurately to the store's location at Akhnoor Palace, Jammu — not a generic or incorrect pin. The 'Get Directions' button must continue to link to https://maps.app.goo.gl/oxEd9nPJ4Ty4pYQL7. Verify the iframe renders the map at the correct physical position visually.",
+      "featureId": "feature-in-kitchenutensils-tsx-replace-all-broken-or-missing-product-image-references-with-the-newly-generated-static-image-assets-stored-in-frontend-public-assets-generated-each-of-the-5-product-cards-must-display-its-corresponding-generated-image-milton-insignia-casserole-crystal-wooden-serving-trays-milton-pearl-thermoware-insulated-casserole-senso-finger-chipser-and-cello-puro-kids-junior-water-bottles-use-img-tags-with-correct-relative-paths-pointing-to-frontend-public-assets-generated",
+      "featureTitle": "In KitchenUtensils.tsx, replace all broken or missing product image references with the newly generated static image assets stored in frontend/public/assets/generated/. Each of the 5 product cards must display its corresponding generated image: Milton Insignia Casserole, Crystal Wooden Serving Trays, Milton Pearl Thermoware Insulated Casserole, Senso Finger Chipser, and Cello Puro Kids & Junior Water Bottles. Use <img> tags with correct relative paths pointing to frontend/public/assets/generated/.",
       "files": [
-        "frontend/src/components/LocationSection.tsx"
+        "frontend/src/components/KitchenUtensils.tsx"
       ],
       "components": [
         "blob-storage@4.0.0",
@@ -16,7 +16,85 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-32"
+        "REQ-33"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-in-householdproducts-tsx-replace-the-broken-or-missing-dustbin-product-image-reference-with-the-newly-generated-static-image-asset-in-frontend-public-assets-generated-the-single-product-card-must-display-the-colorful-dustbins-image-visibly-using-an-img-tag-with-the-correct-path",
+      "featureTitle": "In HouseholdProducts.tsx, replace the broken or missing dustbin product image reference with the newly generated static image asset in frontend/public/assets/generated/. The single product card must display the colorful dustbins image visibly using an <img> tag with the correct path.",
+      "files": [
+        "frontend/src/components/HouseholdProducts.tsx"
+      ],
+      "components": [
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-34"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-in-productcategories-tsx-replace-all-broken-or-missing-category-card-images-with-the-newly-generated-static-image-assets-in-frontend-public-assets-generated-each-of-the-6-category-cards-stainless-steel-utensils-pressure-cookers-cookware-sets-kitchen-tools-plastic-household-items-gift-items-must-display-a-visible-generated-image-that-is-visually-appropriate-for-that-category",
+      "featureTitle": "In ProductCategories.tsx, replace all broken or missing category card images with the newly generated static image assets in frontend/public/assets/generated/. Each of the 6 category cards (Stainless Steel Utensils, Pressure Cookers, Cookware Sets, Kitchen Tools, Plastic Household Items, Gift Items) must display a visible generated image that is visually appropriate for that category.",
+      "files": [
+        "frontend/src/components/ProductCategories.tsx"
+      ],
+      "components": [
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-35"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-in-the-featured-products-showcase-section-if-it-exists-as-a-component-replace-all-broken-or-missing-product-images-with-the-newly-generated-static-image-assets-in-frontend-public-assets-generated-each-of-the-8-product-cards-steel-tiffin-box-pressure-cooker-5l-non-stick-kadai-steel-glass-set-casserole-set-mixing-bowls-set-vegetable-chopper-stainless-steel-thali-must-display-a-visible-generated-image-appropriate-for-that-product",
+      "featureTitle": "In the Featured Products Showcase section (if it exists as a component), replace all broken or missing product images with the newly generated static image assets in frontend/public/assets/generated/. Each of the 8 product cards (Steel Tiffin Box, Pressure Cooker 5L, Non-Stick Kadai, Steel Glass Set, Casserole Set, Mixing Bowls Set, Vegetable Chopper, Stainless Steel Thali) must display a visible generated image appropriate for that product.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/FeaturedProducts.tsx"
+      ],
+      "components": [
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-36"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-in-the-photo-gallery-section-replace-all-broken-or-missing-gallery-images-with-the-newly-generated-static-image-assets-in-frontend-public-assets-generated-all-6-gallery-grid-items-must-display-visible-product-or-store-images",
+      "featureTitle": "In the Photo Gallery section, replace all broken or missing gallery images with the newly generated static image assets in frontend/public/assets/generated/. All 6 gallery grid items must display visible product or store images.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/PhotoGallery.tsx"
+      ],
+      "components": [
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-37"
       ],
       "confidence": "high"
     }

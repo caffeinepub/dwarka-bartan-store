@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 19,
+  "projectStateVersion": 21,
   "summary": "Business website for Dwarka Bartan Store — a kitchen utensils & household store in Main Market, Akhnoor, Jammu & Kashmir, India. User wants a new version of the site with different features, a new color combination, and a custom logo designed for the brand.",
   "architectural_notes": [
     "Warm color scheme: gold accents, steel gray, white background",
@@ -8,10 +8,14 @@
     "Meta Title: 'Utensil Shop in Akhnoor | Dwarka Bartan Store' | Tagline: 'Quality Utensils for Every Home'",
     "Trust badge: 'Trusted for 50+ Years' (not 10+)",
     "Location updated to: Dwarka Bartan Store, Akhnoor Palace, Jammu",
-    "Business hours: Mon–Sat 9:00 AM–8:00 PM, Sunday 9:00 AM–8:00 PM, Holiday on last Sunday of every month"
+    "Business hours: Mon–Sat 9:00 AM–8:00 PM, Sunday 9:00 AM–8:00 PM, Holiday on last Sunday of every month",
+    "Product images must be embedded or generated directly — do not rely on user-uploaded assets that may not load"
   ],
-  "known_issues": [],
+  "known_issues": [
+    "Product photos are not visible on the website — uploaded/referenced images are not rendering correctly"
+  ],
   "isFixRequest": true,
+  "imageRequirements": "## Required Images\n- Milton Insignia Casserole — a stainless steel insulated casserole with a premium glossy lid and elegant floral design on a warm cream background (milton-insignia-casserole.dim_600x600.png)\n- Crystal wooden serving tray — a natural wood rectangular serving tray with handles, set on a rustic kitchen surface (crystal-wooden-serving-tray.dim_600x600.png)\n- Milton Pearl Thermoware Insulated Casserole — a pastel-colored thermoware casserole with a dome lid and modern shape on a light background (milton-pearl-thermoware-casserole.dim_600x600.png)\n- Senso Finger Chipser — a compact push-action vegetable cutter with stainless steel blades and a white/green plastic body (senso-finger-chipser.dim_600x600.png)\n- Cello Puro Kids water bottles — a set of colorful leak-proof water bottles in red, blue, green and yellow on a white background (cello-puro-kids-water-bottles.dim_600x600.png)\n- Colorful plastic dustbins — four swing-top dustbins in red, blue, yellow, and black arranged together on a clean white background (colorful-plastic-dustbins.dim_600x600.png)\n- Stainless steel utensils collection — a flat-lay arrangement of polished steel spoons, ladles, and tongs on a dark surface (category-stainless-steel-utensils.dim_600x400.png)\n- Pressure cooker — a silver aluminum pressure cooker with a black handle and safety valve on a kitchen counter (category-pressure-cookers.dim_600x400.png)\n- Cookware set — a matching set of non-stick pots and pans in dark gray with glass lids arranged neatly (category-cookware-sets.dim_600x400.png)\n- Kitchen tools collection — a variety of colorful kitchen gadgets including peelers, graters, and spatulas on a wooden background (category-kitchen-tools.dim_600x400.png)\n- Plastic household items — assorted colorful plastic storage containers, water jugs, and organizers on a shelf (category-plastic-household.dim_600x400.png)\n- Gift items — a decorative gift hamper with wrapped kitchen items, ribbons, and a festive presentation box (category-gift-items.dim_600x400.png)\n- Steel tiffin box — a shiny stainless steel multi-tier tiffin box with latched clasps on a white background (product-steel-tiffin-box.dim_600x600.png)\n- Pressure cooker 5 litre — a large 5L stainless steel pressure cooker with safety valve and bakelite handle (product-pressure-cooker-5l.dim_600x600.png)\n- Non-stick kadai — a deep black non-stick kadai with two side handles and a tempered glass lid (product-non-stick-kadai.dim_600x600.png)\n- Steel glass set — a set of six shiny stainless steel drinking glasses arranged in a row on a white surface (product-steel-glass-set.dim_600x600.png)\n- Casserole set — a set of three nested stainless steel casseroles with matching floral-patterned lids (product-casserole-set.dim_600x600.png)\n- Mixing bowls set — a set of five graduated stainless steel mixing bowls stacked together (product-mixing-bowls-set.dim_600x600.png)\n- Vegetable chopper — a transparent plastic vegetable chopper with a pull-cord mechanism and stainless steel blades (product-vegetable-chopper.dim_600x600.png)\n- Stainless steel thali — a large round stainless steel thali plate with a raised rim on a clean white background (product-stainless-steel-thali.dim_600x600.png)\n- Hero product showcase image — an artfully arranged display of premium kitchen utensils, cookware, and casseroles on an emerald green background with warm lighting (hero-utensils.dim_1200x600.png)\n- Photo gallery image 1 — a neatly organized store shelf displaying rows of stainless steel utensils and cookware (gallery-store-shelf.dim_800x600.png)\n- Photo gallery image 2 — a close-up of gleaming stainless steel pressure cookers stacked on a display (gallery-pressure-cookers.dim_800x600.png)\n- Photo gallery image 3 — a flat-lay of colorful kitchen tools and gadgets arranged on a wooden surface (gallery-kitchen-tools.dim_800x600.png)\n- Photo gallery image 4 — a curated gift hamper with premium kitchen items wrapped in festive packaging (gallery-gift-hamper.dim_800x600.png)\n- Photo gallery image 5 — a set of elegant casseroles and serving dishes displayed on a marble surface (gallery-casseroles.dim_800x600.png)\n- Photo gallery image 6 — a vibrant arrangement of plastic household products in multiple colors displayed on store shelves (gallery-household-products.dim_800x600.png)",
   "existing_features": [
     {
       "id": "feature-apply-a-warm-premium-visual-theme-across-the-entire-site-gold-accent-color-c9a84c-or-similar-warm-gold-steel-gray-4a4a4a-and-white-ffffff-background-use-modern-clean-sans-serif-typography-for-headings-and-body-ensure-consistent-spacing-card-shadows-and-smooth-css-scroll-behavior-all-sections-must-be-fully-responsive-and-mobile-first",
@@ -260,6 +264,46 @@
         "REQ-32"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-in-kitchenutensils-tsx-replace-all-broken-or-missing-product-image-references-with-the-newly-generated-static-image-assets-stored-in-frontend-public-assets-generated-each-of-the-5-product-cards-must-display-its-corresponding-generated-image-milton-insignia-casserole-crystal-wooden-serving-trays-milton-pearl-thermoware-insulated-casserole-senso-finger-chipser-and-cello-puro-kids-junior-water-bottles-use-img-tags-with-correct-relative-paths-pointing-to-frontend-public-assets-generated",
+      "title": "In KitchenUtensils.tsx, replace all broken or missing product image references with the newly generated static image assets stored in frontend/public/assets/generated/. Each of the 5 product cards must display its corresponding generated image: Milton Insignia Casserole, Crystal Wooden Serving Trays, Milton Pearl Thermoware Insulated Casserole, Senso Finger Chipser, and Cello Puro Kids & Junior Water Bottles. Use <img> tags with correct relative paths pointing to frontend/public/assets/generated/.",
+      "reqIds": [
+        "REQ-33"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-in-householdproducts-tsx-replace-the-broken-or-missing-dustbin-product-image-reference-with-the-newly-generated-static-image-asset-in-frontend-public-assets-generated-the-single-product-card-must-display-the-colorful-dustbins-image-visibly-using-an-img-tag-with-the-correct-path",
+      "title": "In HouseholdProducts.tsx, replace the broken or missing dustbin product image reference with the newly generated static image asset in frontend/public/assets/generated/. The single product card must display the colorful dustbins image visibly using an <img> tag with the correct path.",
+      "reqIds": [
+        "REQ-34"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-in-productcategories-tsx-replace-all-broken-or-missing-category-card-images-with-the-newly-generated-static-image-assets-in-frontend-public-assets-generated-each-of-the-6-category-cards-stainless-steel-utensils-pressure-cookers-cookware-sets-kitchen-tools-plastic-household-items-gift-items-must-display-a-visible-generated-image-that-is-visually-appropriate-for-that-category",
+      "title": "In ProductCategories.tsx, replace all broken or missing category card images with the newly generated static image assets in frontend/public/assets/generated/. Each of the 6 category cards (Stainless Steel Utensils, Pressure Cookers, Cookware Sets, Kitchen Tools, Plastic Household Items, Gift Items) must display a visible generated image that is visually appropriate for that category.",
+      "reqIds": [
+        "REQ-35"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-in-the-featured-products-showcase-section-if-it-exists-as-a-component-replace-all-broken-or-missing-product-images-with-the-newly-generated-static-image-assets-in-frontend-public-assets-generated-each-of-the-8-product-cards-steel-tiffin-box-pressure-cooker-5l-non-stick-kadai-steel-glass-set-casserole-set-mixing-bowls-set-vegetable-chopper-stainless-steel-thali-must-display-a-visible-generated-image-appropriate-for-that-product",
+      "title": "In the Featured Products Showcase section (if it exists as a component), replace all broken or missing product images with the newly generated static image assets in frontend/public/assets/generated/. Each of the 8 product cards (Steel Tiffin Box, Pressure Cooker 5L, Non-Stick Kadai, Steel Glass Set, Casserole Set, Mixing Bowls Set, Vegetable Chopper, Stainless Steel Thali) must display a visible generated image appropriate for that product.",
+      "reqIds": [
+        "REQ-36"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-in-the-photo-gallery-section-replace-all-broken-or-missing-gallery-images-with-the-newly-generated-static-image-assets-in-frontend-public-assets-generated-all-6-gallery-grid-items-must-display-visible-product-or-store-images",
+      "title": "In the Photo Gallery section, replace all broken or missing gallery images with the newly generated static image assets in frontend/public/assets/generated/. All 6 gallery grid items must display visible product or store images.",
+      "reqIds": [
+        "REQ-37"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
@@ -359,6 +403,20 @@
       "id": "AR-16",
       "summary": "Update the Google Maps embed and 'Get Directions' link in LocationSection.tsx to use the specific Maps URL: https://maps.app.goo.gl/oxEd9nPJ4Ty4pYQL7",
       "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-17",
+      "summary": "Replace missing/broken product images with AI-generated or sourced placeholder images for all product sections (Kitchen Utensils, Household Products, Product Categories, Featured Products, Gallery) so that photos are visible on the website",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-23",
+      "summary": "In HeroSection.tsx, replace the broken or missing hero product image with the newly generated hero image asset in frontend/public/assets/generated/. The hero showcase card on the right side of the split layout must display the hero product image visibly.",
+      "reqIds": [
+        "REQ-38"
+      ],
       "status": "pending"
     }
   ],

@@ -8,7 +8,7 @@ const kitchenProducts = [
     name: 'Milton Insignia Casserole',
     description:
       'The Milton Insignia Casserole is a premium thermoware serving dish with a stunning designer exterior, gold-finish handles, and a stainless steel interior that keeps food hot for hours. BPA-free and food-grade certified, it is the perfect centrepiece for family meals and festive occasions.',
-    image: '/assets/generated/milton-insignia-casserole.dim_600x400.jpg',
+    image: '/assets/generated/milton-insignia-casserole.dim_600x600.png',
     whatsappMsg: 'Hi! I am interested in the Milton Insignia Casserole. Please share more details.',
   },
   {
@@ -16,7 +16,7 @@ const kitchenProducts = [
     name: 'Crystal Wooden Serving Trays',
     description:
       'These elegant Crystal wooden serving trays are crafted from premium solid wood with a rich natural finish and sturdy side handles for easy carrying. Available in multiple sizes, they are ideal for serving breakfast in bed, hosting guests, or adding a rustic touch to your dining table.',
-    image: '/assets/generated/crystal-wooden-serving-trays.dim_600x400.jpg',
+    image: '/assets/generated/crystal-wooden-serving-tray.dim_600x600.png',
     whatsappMsg: 'Hi! I am interested in the Crystal Wooden Serving Trays. Please share more details.',
   },
   {
@@ -24,7 +24,7 @@ const kitchenProducts = [
     name: 'Milton Pearl Thermoware Insulated Casserole',
     description:
       'The Milton Pearl Thermoware Insulated Casserole features PU insulation technology that keeps food hot or cold for extended periods, making it perfect for everyday dining and special gatherings. Its sleek design with a gold accent band and food-grade, BPA-free construction ensures both style and safety at your table.',
-    image: '/assets/generated/milton-pearl-casserole.dim_600x400.jpg',
+    image: '/assets/generated/milton-pearl-thermoware-casserole.dim_600x600.png',
     whatsappMsg: 'Hi! I am interested in the Milton Pearl Thermoware Insulated Casserole. Please share more details.',
   },
   {
@@ -32,7 +32,7 @@ const kitchenProducts = [
     name: 'Senso Finger Chipser',
     description:
       'The Senso Finger Chipser is a smart, push-action kitchen tool that lets you cut perfect finger chips, fries, and vegetable sticks in seconds — no knife skills required. Made from food-safe materials with a stainless steel blade grid, it is easy to use, quick to clean, and a must-have for every modern kitchen.',
-    image: '/assets/generated/senso-finger-chipser.dim_600x400.jpg',
+    image: '/assets/generated/senso-finger-chipser.dim_600x600.png',
     whatsappMsg: 'Hi! I am interested in the Senso Finger Chipser. Please share more details.',
   },
   {
@@ -40,7 +40,7 @@ const kitchenProducts = [
     name: 'Cello Puro Kids & Junior Water Bottles',
     description:
       'Cello Puro water bottles for kids come in vibrant colours with a convenient shoulder strap, making them perfect for school, sports, and outdoor activities. Available in Kids and Junior variants with capacities from 400 ml to 900 ml, they are made from BPA-free, food-grade plastic that is safe and durable for everyday use.',
-    image: '/assets/generated/cello-puro-water-bottles.dim_600x400.jpg',
+    image: '/assets/generated/cello-puro-kids-water-bottles.dim_600x600.png',
     whatsappMsg: 'Hi! I am interested in the Cello Puro Kids & Junior Water Bottles. Please share more details.',
   },
 ];
@@ -72,11 +72,12 @@ export function KitchenUtensils() {
               className="group bg-card rounded-2xl overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-300 flex flex-col"
             >
               {/* Image */}
-              <div className="overflow-hidden aspect-[4/3] bg-muted">
+              <div className="overflow-hidden aspect-square bg-muted">
                 <img
                   src={product.image}
                   alt={product.name}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  loading="lazy"
                 />
               </div>
 

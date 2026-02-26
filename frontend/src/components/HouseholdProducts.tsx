@@ -8,7 +8,7 @@ const householdProducts = [
     name: 'Colorful Plastic Dustbins with Swing-Top Lid',
     description:
       'These sturdy plastic dustbins come in four vibrant colours — red, blue, yellow, and black — with a convenient swing-top lid for easy, hands-free disposal. Built from high-quality, durable plastic, they are perfect for kitchens, offices, and living spaces to keep your home clean and organised.',
-    image: '/assets/generated/colorful-dustbins.dim_600x400.jpg',
+    image: '/assets/generated/colorful-plastic-dustbins.dim_600x600.png',
     whatsappMsg:
       'Hi! I am interested in the Colorful Plastic Dustbins with Swing-Top Lid. Please share more details.',
   },
@@ -42,11 +42,12 @@ export function HouseholdProducts() {
                 className="group bg-card rounded-2xl overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-300 flex flex-col"
               >
                 {/* Image */}
-                <div className="overflow-hidden aspect-[4/3] bg-muted">
+                <div className="overflow-hidden aspect-square bg-muted">
                   <img
                     src={product.image}
                     alt={product.name}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    loading="lazy"
                   />
                 </div>
 
