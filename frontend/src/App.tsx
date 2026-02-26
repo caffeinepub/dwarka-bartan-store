@@ -2,6 +2,8 @@ import { FestiveOfferBanner } from './components/FestiveOfferBanner';
 import { Header } from './components/Header';
 import { HeroSection } from './components/HeroSection';
 import { ProductCategories } from './components/ProductCategories';
+import { KitchenUtensils } from './components/KitchenUtensils';
+import { HouseholdProducts } from './components/HouseholdProducts';
 import { WhyChooseUs } from './components/WhyChooseUs';
 import { CustomerReviews } from './components/CustomerReviews';
 import { LocationSection } from './components/LocationSection';
@@ -19,6 +21,8 @@ export default function App() {
       <main>
         <HeroSection />
         <ProductCategories />
+        <KitchenUtensils />
+        <HouseholdProducts />
         <WhyChooseUs />
         <CustomerReviews />
         <LocationSection />

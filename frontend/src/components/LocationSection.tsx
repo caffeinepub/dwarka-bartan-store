@@ -1,9 +1,9 @@
 import { useRef, useEffect, useState } from 'react';
-import { Phone, MapPin, Clock, Navigation } from 'lucide-react';
+import { Phone, MapPin, Clock, Navigation, Info } from 'lucide-react';
 
 const businessHours = [
   { day: 'Monday – Saturday', hours: '9:00 AM – 8:00 PM', open: true },
-  { day: 'Sunday', hours: '10:00 AM – 6:00 PM', open: true },
+  { day: 'Sunday', hours: '9:00 AM – 8:00 PM', open: true, note: 'Closed on the last Sunday of every month' },
 ];
 
 export function LocationSection() {
@@ -36,7 +36,7 @@ export function LocationSection() {
             Visit Our Store
           </h2>
           <p className="text-muted-foreground font-body max-w-xl mx-auto">
-            Located Opposite Punjab National Bank, Akhnoor, Jammu & Kashmir. Easy to find, easy to reach.
+            Located at Akhnoor Palace, Jammu. Easy to find, easy to reach.
           </p>
         </div>
 
@@ -52,8 +52,8 @@ export function LocationSection() {
           {/* Map */}
           <div className="rounded-2xl overflow-hidden shadow-card h-80 lg:h-96 bg-muted">
             <iframe
-              title="Dwarka Bartan Store Location - Opposite Punjab National Bank Akhnoor"
-              src="https://maps.google.com/maps?q=Akhnoor+Main+Market+Jammu+Kashmir+India&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              title="Dwarka Bartan Store Location"
+              src="https://maps.google.com/maps?q=32.8963,74.7407&t=&z=17&ie=UTF8&iwloc=&output=embed"
               width="100%"
               height="100%"
               style={{ border: 0 }}
@@ -74,8 +74,8 @@ export function LocationSection() {
                 <h3 className="font-display font-bold text-foreground mb-1">Our Address</h3>
                 <p className="text-muted-foreground font-body text-sm leading-relaxed">
                   Dwarka Bartan Store<br />
-                  Opposite Punjab National Bank<br />
-                  Akhnoor, Jammu & Kashmir, India
+                  Akhnoor Palace<br />
+                  Jammu, Jammu & Kashmir, India
                 </p>
               </div>
             </div>
@@ -106,9 +106,17 @@ export function LocationSection() {
                 <h3 className="font-display font-bold text-foreground mb-3">Business Hours</h3>
                 <div className="space-y-2">
                   {businessHours.map((item) => (
-                    <div key={item.day} className="flex items-center justify-between gap-4">
-                      <span className="text-foreground text-sm font-body font-medium">{item.day}</span>
-                      <span className="text-muted-foreground text-sm font-body">{item.hours}</span>
+                    <div key={item.day}>
+                      <div className="flex items-center justify-between gap-4">
+                        <span className="text-foreground text-sm font-body font-medium">{item.day}</span>
+                        <span className="text-muted-foreground text-sm font-body">{item.hours}</span>
+                      </div>
+                      {item.note && (
+                        <div className="flex items-center gap-1.5 mt-1.5 bg-gold/8 rounded-lg px-2.5 py-1.5">
+                          <Info className="w-3.5 h-3.5 text-gold shrink-0" />
+                          <span className="text-gold text-xs font-body font-medium">{item.note}</span>
+                        </div>
+                      )}
                     </div>
                   ))}
                 </div>
@@ -117,7 +125,7 @@ export function LocationSection() {
 
             {/* Directions Button */}
             <a
-              href="https://maps.google.com/?q=Opposite+Punjab+National+Bank+Akhnoor+Jammu+Kashmir+India"
+              href="https://maps.app.goo.gl/oxEd9nPJ4Ty4pYQL7"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2.5 bg-steel-dark hover:bg-steel text-white font-bold py-4 rounded-full transition-all duration-200 font-body"

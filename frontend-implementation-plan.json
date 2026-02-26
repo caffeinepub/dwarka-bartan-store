@@ -1,22 +1,22 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Update animated counters: Happy Families to 20,000+ and Products to 5,000+",
+  "title": "Fix Google Maps embed position/coordinates in LocationSection",
   "requirements": [
     {
-      "id": "REQ-23",
-      "summary": "Update HeroSection counter values: change Happy Families from current value to 20,000+ and Products from current value to 5,000+, ensuring animated counting behavior continues to work correctly",
+      "id": "REQ-32",
+      "summary": "Fix the Google Maps iframe in LocationSection.tsx to correctly display the map centered on Dwarka Bartan Store at Akhnoor Palace, Jammu, using a proper embed URL that shows the accurate physical location",
       "acceptanceCriteria": [
-        "The hero counter row displays '20,000+ Happy Families' (not '5,000+' or '1,000+').",
-        "The hero counter row displays '5,000+ Products' (not '500+').",
-        "All other counter values (e.g., '50+ Years') remain unchanged.",
-        "Animated counting behavior still works correctly for the updated target numbers."
+        "The embedded Google Maps iframe in LocationSection.tsx visually shows a map pin at or near Akhnoor Palace, Jammu — not a different or default location.",
+        "The iframe uses a valid Google Maps embed URL (using /maps/embed? format) that loads correctly without errors.",
+        "The 'Get Directions' button links to https://maps.app.goo.gl/oxEd9nPJ4Ty4pYQL7.",
+        "The map section is visible and properly positioned within the Location section layout."
       ],
       "file_operations": [
         {
-          "path": "frontend/src/components/HeroSection.tsx",
+          "path": "frontend/src/components/LocationSection.tsx",
           "operation": "modify",
-          "description": "Update the animated counter row data: change the 'Happy Families' (or 'Happy Customers') counter target value to 20000 and label to '20,000+ Happy Families', and change the 'Products' counter target value to 5000 and label to '5,000+ Products'. Locate the counter configuration array or object (likely containing fields such as value, label, icon, or suffix) and update only these two entries. Ensure the animated counting logic (e.g., useEffect or animation hook) correctly animates to the new target numbers. Do not modify any other counters (e.g., '50+ Years') or any other part of the hero section."
+          "description": "Update the Google Maps iframe src attribute to use a proper Google Maps embed URL that accurately centers on Dwarka Bartan Store's location at Akhnoor Palace, Jammu. Replace the current iframe src with a valid /maps/embed URL format (e.g., https://www.google.com/maps/embed?pb=... or https://www.google.com/maps/embed/v1/place?key=...&q=...) that corresponds to the correct geographic coordinates or place ID for the store. Ensure the 'Get Directions' button continues to link to https://maps.app.goo.gl/oxEd9nPJ4Ty4pYQL7. Verify visually that the map renders at the correct physical position showing Akhnoor Palace, Jammu area."
         }
       ]
     }

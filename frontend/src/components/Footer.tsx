@@ -43,7 +43,7 @@ export function Footer() {
               </div>
             </div>
             <p className="text-white/60 text-sm font-body leading-relaxed mb-5">
-              Akhnoor's most trusted kitchen utensil and household store. Serving families with quality products for 50+ years.
+              Jammu's most trusted kitchen utensil and household store. Serving families with quality products for 50+ years.
             </p>
             <div className="flex flex-col gap-2">
               <a href="tel:+919419100159" className="flex items-center gap-2 text-gold hover:text-gold-light transition-colors text-sm font-body">
@@ -52,7 +52,7 @@ export function Footer() {
               </a>
               <div className="flex items-start gap-2 text-white/60 text-sm font-body">
                 <MapPin className="w-4 h-4 shrink-0 mt-0.5" />
-                Opp. Punjab National Bank, Akhnoor, J&K
+                Akhnoor Palace, Jammu, J&K
               </div>
             </div>
           </div>
@@ -123,7 +123,7 @@ export function Footer() {
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-center">
           <p className="text-white/50 text-xs font-body">
-            © {year} Dwarka Bartan Store, Akhnoor. All rights reserved.
+            © {year} Dwarka Bartan Store, Akhnoor Palace, Jammu. All rights reserved.
           </p>
           <p className="text-white/40 text-xs font-body flex items-center gap-1">
             Built with <Heart className="w-3 h-3 text-gold fill-gold" /> using{' '}

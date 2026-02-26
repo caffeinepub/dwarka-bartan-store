@@ -2,10 +2,10 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-in-herosection-tsx-update-the-animated-counter-row-values-change-5000-happy-customers-or-happy-families-to-20-000-happy-families-and-change-500-products-to-5-000-products-ensure-the-counter-labels-and-animated-number-targets-reflect-these-new-values-throughout-the-component",
-      "featureTitle": "In HeroSection.tsx, update the animated counter row values: change '5000+ Happy Customers' (or 'Happy Families') to '20,000+ Happy Families', and change '500+ Products' to '5,000+ Products'. Ensure the counter labels and animated number targets reflect these new values throughout the component.",
+      "featureId": "feature-in-locationsection-tsx-fix-the-google-maps-iframe-so-it-correctly-displays-the-map-centered-on-the-right-coordinates-for-dwarka-bartan-store-akhnoor-palace-jammu-the-iframe-embed-url-must-use-a-proper-google-maps-embed-url-e-g-https-www-google-com-maps-embed-pb-or-the-embed-q-variant-that-points-accurately-to-the-store-s-location-at-akhnoor-palace-jammu-not-a-generic-or-incorrect-pin-the-get-directions-button-must-continue-to-link-to-https-maps-app-goo-gl-oxed9npj4ty4pyql7-verify-the-iframe-renders-the-map-at-the-correct-physical-position-visually",
+      "featureTitle": "In LocationSection.tsx, fix the Google Maps iframe so it correctly displays the map centered on the right coordinates for Dwarka Bartan Store, Akhnoor Palace, Jammu. The iframe embed URL must use a proper Google Maps embed URL (e.g., https://www.google.com/maps/embed?pb=... or the /embed?q= variant) that points accurately to the store's location at Akhnoor Palace, Jammu — not a generic or incorrect pin. The 'Get Directions' button must continue to link to https://maps.app.goo.gl/oxEd9nPJ4Ty4pYQL7. Verify the iframe renders the map at the correct physical position visually.",
       "files": [
-        "frontend/src/components/HeroSection.tsx"
+        "frontend/src/components/LocationSection.tsx"
       ],
       "components": [
         "blob-storage@4.0.0",
@@ -16,7 +16,7 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-23"
+        "REQ-32"
       ],
       "confidence": "high"
     }

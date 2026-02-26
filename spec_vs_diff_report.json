@@ -1,14 +1,23 @@
 {
   "kind": "spec_vs_diff_report",
   "version": "1.0",
-  "generatedAt": "2026-02-26T14:55:39.449Z",
-  "summary": "REQ-23 is fully implemented. HeroSection.tsx has been updated to display '20,000+ Happy Families' and '5,000+ Products' in the counter row, while '50+ Years' remains unchanged. The frontend-file-summaries.txt also confirms these updated counter values. No missing requirements or hallucinated features were identified.",
-  "missing_requirements": [],
+  "generatedAt": "2026-02-26T15:41:42.093Z",
+  "summary": "REQ-32 is largely implemented: LocationSection.tsx was updated with a new Google Maps iframe URL pointing to coordinates 32.8963, 74.7407 (Akhnoor Palace area), and the 'Get Directions' button retains the correct link. However, the iframe URL uses the maps.google.com/maps?output=embed variant rather than the preferred /maps/embed? format, which may raise concerns about URL validity per the acceptance criteria.",
+  "missing_requirements": [
+    {
+      "id": "REQ-32",
+      "requirement": "The iframe uses a valid Google Maps embed URL (using /maps/embed? format) that loads correctly without errors.",
+      "reason": "The implemented iframe src uses 'https://maps.google.com/maps?q=32.8963,74.7407&t=&z=17&ie=UTF8&iwloc=&output=embed' — the older maps.google.com/maps?output=embed pattern — rather than the explicitly required /maps/embed? format (e.g., https://www.google.com/maps/embed?pb=... or https://www.google.com/maps/embed?q=...). The acceptance criteria specifically require the /maps/embed? format.",
+      "evidence": [
+        "frontend/src/components/LocationSection.tsx"
+      ]
+    }
+  ],
   "hallucinated_features": [],
-  "confidence": 0.97,
+  "confidence": 0.82,
   "changed_files": [
     "frontend-file-summaries.txt",
-    "frontend/src/components/HeroSection.tsx",
+    "frontend/src/components/LocationSection.tsx",
     "project_state.json"
   ]
 }

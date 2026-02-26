@@ -1,16 +1,17 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 9,
+  "projectStateVersion": 19,
   "summary": "Business website for Dwarka Bartan Store — a kitchen utensils & household store in Main Market, Akhnoor, Jammu & Kashmir, India. User wants a new version of the site with different features, a new color combination, and a custom logo designed for the brand.",
   "architectural_notes": [
     "Warm color scheme: gold accents, steel gray, white background",
     "Mobile-first responsive design with sticky header and smooth scroll animations",
     "Meta Title: 'Utensil Shop in Akhnoor | Dwarka Bartan Store' | Tagline: 'Quality Utensils for Every Home'",
-    "Location: Opposite Punjab National Bank, Akhnoor, J&K, India",
-    "Trust badge: 'Trusted for 50+ Years' (not 10+)"
+    "Trust badge: 'Trusted for 50+ Years' (not 10+)",
+    "Location updated to: Dwarka Bartan Store, Akhnoor Palace, Jammu",
+    "Business hours: Mon–Sat 9:00 AM–8:00 PM, Sunday 9:00 AM–8:00 PM, Holiday on last Sunday of every month"
   ],
   "known_issues": [],
-  "isFixRequest": false,
+  "isFixRequest": true,
   "existing_features": [
     {
       "id": "feature-apply-a-warm-premium-visual-theme-across-the-entire-site-gold-accent-color-c9a84c-or-similar-warm-gold-steel-gray-4a4a4a-and-white-ffffff-background-use-modern-clean-sans-serif-typography-for-headings-and-body-ensure-consistent-spacing-card-shadows-and-smooth-css-scroll-behavior-all-sections-must-be-fully-responsive-and-mobile-first",
@@ -195,6 +196,70 @@
         "REQ-23"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-create-a-new-kitchen-utensils-section-in-app-tsx-with-a-responsive-product-grid-displaying-5-product-cards-each-card-must-show-the-uploaded-product-photo-used-as-a-static-asset-from-frontend-public-assets-generated-an-ai-written-product-name-and-a-2-sentence-description-no-price-displayed-products-and-descriptions-1-milton-insignia-casserole-a-masterpiece-of-design-and-function-the-milton-insignia-casserole-features-a-steel-interior-with-pu-insulation-to-keep-food-hot-for-hours-isi-marked-and-bpa-free-it-is-the-perfect-centerpiece-for-elegant-dining-at-home-2-crystal-wooden-serving-trays-crafted-from-premium-natural-wood-these-crystal-serving-trays-bring-rustic-warmth-and-sophistication-to-your-table-ideal-for-serving-snacks-tea-or-breakfast-in-style-they-are-durable-and-easy-to-carry-3-milton-pearl-thermoware-insulated-casserole-the-milton-pearl-is-a-pu-insulated-thermoware-casserole-that-keeps-food-piping-hot-or-refreshingly-cold-for-extended-periods-food-grade-and-bpa-free-it-is-available-in-multiple-elegant-colours-and-capacities-4-senso-finger-chipser-the-senso-finger-chipser-is-a-smart-push-action-kitchen-tool-that-cuts-potatoes-carrots-onions-and-cucumbers-into-perfect-finger-chip-strips-in-seconds-its-stainless-steel-blades-and-bpa-free-body-make-it-a-safe-and-handy-addition-to-every-kitchen-5-cello-puro-kids-junior-water-bottles-cello-puro-water-bottles-are-vibrant-leak-proof-and-designed-for-active-kids-on-the-go-available-in-multiple-colours-and-capacities-they-are-lightweight-easy-to-carry-and-made-from-food-safe-materials-each-card-must-include-an-enquire-on-whatsapp-button-linking-to-https-wa-me-919419100159-with-a-pre-filled-message-referencing-the-product-name-apply-hover-zoom-css-transform-scale-on-the-card-image-style-the-section-with-the-existing-emerald-cream-theme",
+      "title": "Create a new 'Kitchen Utensils' section in App.tsx with a responsive product grid displaying 5 product cards. Each card must show the uploaded product photo (used as a static asset from frontend/public/assets/generated/), an AI-written product name, and a 2-sentence description — no price displayed. Products and descriptions: (1) Milton Insignia Casserole — 'A masterpiece of design and function, the Milton Insignia Casserole features a steel interior with PU insulation to keep food hot for hours. ISI-marked and BPA-free, it is the perfect centerpiece for elegant dining at home.' (2) Crystal Wooden Serving Trays — 'Crafted from premium natural wood, these Crystal serving trays bring rustic warmth and sophistication to your table. Ideal for serving snacks, tea, or breakfast in style, they are durable and easy to carry.' (3) Milton Pearl Thermoware Insulated Casserole — 'The Milton Pearl is a PU-insulated thermoware casserole that keeps food piping hot or refreshingly cold for extended periods. Food-grade and BPA-free, it is available in multiple elegant colours and capacities.' (4) Senso Finger Chipser — 'The Senso Finger Chipser is a smart, push-action kitchen tool that cuts potatoes, carrots, onions, and cucumbers into perfect finger-chip strips in seconds. Its stainless steel blades and BPA-free body make it a safe and handy addition to every kitchen.' (5) Cello Puro Kids & Junior Water Bottles — 'Cello Puro water bottles are vibrant, leak-proof, and designed for active kids on the go. Available in multiple colours and capacities, they are lightweight, easy to carry, and made from food-safe materials.' Each card must include an 'Enquire on WhatsApp' button linking to https://wa.me/919419100159 with a pre-filled message referencing the product name. Apply hover zoom (CSS transform scale) on the card image. Style the section with the existing emerald/cream theme.",
+      "reqIds": [
+        "REQ-24"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-new-household-products-section-in-app-tsx-with-a-responsive-product-grid-displaying-1-product-card-for-the-colorful-dustbins-the-card-must-show-the-uploaded-dustbin-photo-used-as-a-static-asset-from-frontend-public-assets-generated-an-ai-written-product-name-and-a-2-sentence-description-no-price-displayed-description-these-sturdy-plastic-dustbins-come-in-four-vibrant-colours-red-blue-yellow-and-black-with-a-convenient-swing-top-lid-for-easy-hands-free-disposal-built-from-high-quality-durable-plastic-they-are-perfect-for-kitchens-offices-and-living-spaces-to-keep-your-home-clean-and-organized-the-card-must-include-an-enquire-on-whatsapp-button-linking-to-https-wa-me-919419100159-with-a-pre-filled-message-referencing-the-product-apply-hover-zoom-css-transform-scale-on-the-card-image-style-the-section-with-the-existing-emerald-cream-theme-place-this-section-after-the-kitchen-utensils-section-in-the-page-layout",
+      "title": "Create a new 'Household Products' section in App.tsx with a responsive product grid displaying 1 product card for the colorful dustbins. The card must show the uploaded dustbin photo (used as a static asset from frontend/public/assets/generated/), an AI-written product name, and a 2-sentence description — no price displayed. Description: 'These sturdy plastic dustbins come in four vibrant colours — red, blue, yellow, and black — with a convenient swing-top lid for easy, hands-free disposal. Built from high-quality, durable plastic, they are perfect for kitchens, offices, and living spaces to keep your home clean and organized.' The card must include an 'Enquire on WhatsApp' button linking to https://wa.me/919419100159 with a pre-filled message referencing the product. Apply hover zoom (CSS transform scale) on the card image. Style the section with the existing emerald/cream theme. Place this section after the Kitchen Utensils section in the page layout.",
+      "reqIds": [
+        "REQ-25"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-in-locationsection-tsx-update-the-store-address-displayed-to-dwarka-bartan-store-akhnoor-palace-jammu-everywhere-the-address-appears-in-that-component-also-update-the-google-maps-iframe-embed-url-and-the-get-directions-link-to-point-to-akhnoor-palace-jammu-instead-of-the-previous-address",
+      "title": "In LocationSection.tsx, update the store address displayed to 'Dwarka Bartan Store, Akhnoor Palace, Jammu' everywhere the address appears in that component. Also update the Google Maps iframe embed URL and the 'Get Directions' link to point to 'Akhnoor Palace, Jammu' instead of the previous address.",
+      "reqIds": [
+        "REQ-26"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-every-component-that-displays-the-store-s-physical-address-footer-tsx-herosection-tsx-header-tsx-contactform-tsx-or-any-other-component-referencing-the-old-address-to-show-dwarka-bartan-store-akhnoor-palace-jammu",
+      "title": "Update every component that displays the store's physical address (Footer.tsx, HeroSection.tsx, Header.tsx, ContactForm.tsx, or any other component referencing the old address) to show 'Dwarka Bartan Store, Akhnoor Palace, Jammu'.",
+      "reqIds": [
+        "REQ-27"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-in-locationsection-tsx-update-the-business-hours-for-sunday-from-10-00-am-6-00-pm-to-9-00-am-8-00-pm-add-a-note-below-or-alongside-the-sunday-hours-stating-closed-on-the-last-sunday-of-every-month",
+      "title": "In LocationSection.tsx, update the business hours for Sunday from '10:00 AM – 6:00 PM' to '9:00 AM – 8:00 PM'. Add a note below or alongside the Sunday hours stating 'Closed on the last Sunday of every month'.",
+      "reqIds": [
+        "REQ-28"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-sunday-hours-and-monthly-holiday-note-in-footer-tsx-as-well-to-match-the-updated-hours-sunday-9-00-am-8-00-pm-closed-on-the-last-sunday-of-every-month",
+      "title": "Update the Sunday hours and monthly holiday note in Footer.tsx as well, to match the updated hours: Sunday 9:00 AM – 8:00 PM, closed on the last Sunday of every month.",
+      "reqIds": [
+        "REQ-29"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-in-locationsection-tsx-update-the-google-maps-iframe-embed-url-and-the-get-directions-button-link-to-use-the-specific-location-url-https-maps-app-goo-gl-oxed9npj4ty4pyql7-for-the-iframe-convert-this-short-link-to-a-proper-embeddable-maps-url-pointing-to-the-same-coordinates-the-get-directions-button-must-link-directly-to-https-maps-app-goo-gl-oxed9npj4ty4pyql7",
+      "title": "In LocationSection.tsx, update the Google Maps iframe embed URL and the 'Get Directions' button link to use the specific location URL https://maps.app.goo.gl/oxEd9nPJ4Ty4pYQL7. For the iframe, convert this short link to a proper embeddable Maps URL pointing to the same coordinates. The 'Get Directions' button must link directly to https://maps.app.goo.gl/oxEd9nPJ4Ty4pYQL7.",
+      "reqIds": [
+        "REQ-31"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-in-locationsection-tsx-fix-the-google-maps-iframe-so-it-correctly-displays-the-map-centered-on-the-right-coordinates-for-dwarka-bartan-store-akhnoor-palace-jammu-the-iframe-embed-url-must-use-a-proper-google-maps-embed-url-e-g-https-www-google-com-maps-embed-pb-or-the-embed-q-variant-that-points-accurately-to-the-store-s-location-at-akhnoor-palace-jammu-not-a-generic-or-incorrect-pin-the-get-directions-button-must-continue-to-link-to-https-maps-app-goo-gl-oxed9npj4ty4pyql7-verify-the-iframe-renders-the-map-at-the-correct-physical-position-visually",
+      "title": "In LocationSection.tsx, fix the Google Maps iframe so it correctly displays the map centered on the right coordinates for Dwarka Bartan Store, Akhnoor Palace, Jammu. The iframe embed URL must use a proper Google Maps embed URL (e.g., https://www.google.com/maps/embed?pb=... or the /embed?q= variant) that points accurately to the store's location at Akhnoor Palace, Jammu — not a generic or incorrect pin. The 'Get Directions' button must continue to link to https://maps.app.goo.gl/oxEd9nPJ4Ty4pYQL7. Verify the iframe renders the map at the correct physical position visually.",
+      "reqIds": [
+        "REQ-32"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
@@ -267,6 +332,32 @@
     {
       "id": "AR-12",
       "summary": "Update animated counters: change '5000+ Happy Customers' to '20,000+ Happy Families' and '500+ Products' to '5000+ Products'",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-13",
+      "summary": "Add 'Kitchen Utensils' section with 5 uploaded product photos (Milton Insignia Casserole, Crystal Wooden Serving Trays, Milton Pearl Thermoware, Senso Finger Chipser, Cello Puro water bottles) and 'Household Products' section with colorful dustbins — all with AI-generated descriptions, no prices",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-14",
+      "summary": "Update store location address to 'Dwarka Bartan Store, Akhnoor Palace, Jammu' across all components. Update Sunday hours to 9:00 AM – 8:00 PM and note holiday on last Sunday of every month.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-15",
+      "summary": "In LocationSection.tsx, ensure a prominently displayed click-to-call phone link (+91 9419100159) is present and a 'Get Directions' button linking to Google Maps for Akhnoor Palace, Jammu is visible in the location section.",
+      "reqIds": [
+        "REQ-30"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-16",
+      "summary": "Update the Google Maps embed and 'Get Directions' link in LocationSection.tsx to use the specific Maps URL: https://maps.app.goo.gl/oxEd9nPJ4Ty4pYQL7",
       "reqIds": [],
       "status": "pending"
     }
