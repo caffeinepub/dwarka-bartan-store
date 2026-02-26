@@ -1,0 +1,40 @@
+{
+  "kind": "build_request",
+  "title": "Update animated counters: Happy Families to 20,000+ and Products to 5,000+",
+  "projectName": "Dwarka Bartan Store",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-23",
+      "text": "In HeroSection.tsx, update the animated counter row values: change '5000+ Happy Customers' (or 'Happy Families') to '20,000+ Happy Families', and change '500+ Products' to '5,000+ Products'. Ensure the counter labels and animated number targets reflect these new values throughout the component.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-3"
+        ],
+        "quotes": [
+          "Change the happy families to 20 thousands plus and products to 5000"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The hero counter row displays '20,000+ Happy Families' (not '5,000+' or '1,000+').",
+        "The hero counter row displays '5,000+ Products' (not '500+').",
+        "All other counter values (e.g., '50+ Years') remain unchanged.",
+        "Animated counting behavior still works correctly for the updated target numbers."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not alter any other counter labels or values beyond what is specified.",
+    "Do not modify immutable frontend paths (hooks, main.tsx, ui components)."
+  ],
+  "nonGoals": [
+    "Changing the backend schema or any backend logic.",
+    "Updating Footer social proof text or other section statistics not in the hero counter row.",
+    "Any visual theme or layout changes."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

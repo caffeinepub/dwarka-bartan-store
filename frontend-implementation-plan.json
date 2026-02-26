@@ -1,0 +1,24 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Update animated counters: Happy Families to 20,000+ and Products to 5,000+",
+  "requirements": [
+    {
+      "id": "REQ-23",
+      "summary": "Update HeroSection counter values: change Happy Families from current value to 20,000+ and Products from current value to 5,000+, ensuring animated counting behavior continues to work correctly",
+      "acceptanceCriteria": [
+        "The hero counter row displays '20,000+ Happy Families' (not '5,000+' or '1,000+').",
+        "The hero counter row displays '5,000+ Products' (not '500+').",
+        "All other counter values (e.g., '50+ Years') remain unchanged.",
+        "Animated counting behavior still works correctly for the updated target numbers."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/HeroSection.tsx",
+          "operation": "modify",
+          "description": "Update the animated counter row data: change the 'Happy Families' (or 'Happy Customers') counter target value to 20000 and label to '20,000+ Happy Families', and change the 'Products' counter target value to 5000 and label to '5,000+ Products'. Locate the counter configuration array or object (likely containing fields such as value, label, icon, or suffix) and update only these two entries. Ensure the animated counting logic (e.g., useEffect or animation hook) correctly animates to the new target numbers. Do not modify any other counters (e.g., '50+ Years') or any other part of the hero section."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-in-herosection-tsx-update-the-animated-counter-row-values-change-5000-happy-customers-or-happy-families-to-20-000-happy-families-and-change-500-products-to-5-000-products-ensure-the-counter-labels-and-animated-number-targets-reflect-these-new-values-throughout-the-component",
+      "featureTitle": "In HeroSection.tsx, update the animated counter row values: change '5000+ Happy Customers' (or 'Happy Families') to '20,000+ Happy Families', and change '500+ Products' to '5,000+ Products'. Ensure the counter labels and animated number targets reflect these new values throughout the component.",
+      "files": [
+        "frontend/src/components/HeroSection.tsx"
+      ],
+      "components": [
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-23"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

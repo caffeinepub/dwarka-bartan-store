@@ -1,0 +1,226 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+
+    /* Gold palette */
+    --gold: 0.72 0.12 75;
+    --gold-light: 0.88 0.08 80;
+    --gold-dark: 0.55 0.13 72;
+
+    /* Steel gray palette */
+    --steel: 0.38 0.01 250;
+    --steel-light: 0.55 0.01 250;
+    --steel-dark: 0.22 0.01 250;
+
+    /* Semantic tokens - light mode */
+    --background: 0.99 0 0;
+    --foreground: 0.22 0.01 250;
+    --card: 1 0 0;
+    --card-foreground: 0.22 0.01 250;
+    --popover: 1 0 0;
+    --popover-foreground: 0.22 0.01 250;
+    --primary: 0.72 0.12 75;
+    --primary-foreground: 0.15 0.01 250;
+    --secondary: 0.96 0.005 80;
+    --secondary-foreground: 0.22 0.01 250;
+    --muted: 0.96 0.005 80;
+    --muted-foreground: 0.55 0.01 250;
+    --accent: 0.72 0.12 75;
+    --accent-foreground: 0.15 0.01 250;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    --border: 0.90 0.005 80;
+    --input: 0.90 0.005 80;
+    --ring: 0.72 0.12 75;
+    --chart-1: 0.72 0.12 75;
+    --chart-2: 0.38 0.01 250;
+    --chart-3: 0.55 0.01 250;
+    --chart-4: 0.88 0.08 80;
+    --chart-5: 0.55 0.13 72;
+    --sidebar: 0.99 0 0;
+    --sidebar-foreground: 0.22 0.01 250;
+    --sidebar-primary: 0.72 0.12 75;
+    --sidebar-primary-foreground: 0.15 0.01 250;
+    --sidebar-accent: 0.96 0.005 80;
+    --sidebar-accent-foreground: 0.22 0.01 250;
+    --sidebar-border: 0.90 0.005 80;
+    --sidebar-ring: 0.72 0.12 75;
+  }
+
+  .dark {
+    --background: 0.15 0.01 250;
+    --foreground: 0.96 0.005 80;
+    --card: 0.20 0.01 250;
+    --card-foreground: 0.96 0.005 80;
+    --popover: 0.20 0.01 250;
+    --popover-foreground: 0.96 0.005 80;
+    --primary: 0.72 0.12 75;
+    --primary-foreground: 0.15 0.01 250;
+    --secondary: 0.28 0.01 250;
+    --secondary-foreground: 0.96 0.005 80;
+    --muted: 0.28 0.01 250;
+    --muted-foreground: 0.65 0.01 250;
+    --accent: 0.72 0.12 75;
+    --accent-foreground: 0.15 0.01 250;
+    --destructive: 0.704 0.191 22.216;
+    --destructive-foreground: 0.985 0 0;
+    --border: 1 0 0 / 10%;
+    --input: 1 0 0 / 15%;
+    --ring: 0.72 0.12 75;
+    --sidebar: 0.20 0.01 250;
+    --sidebar-foreground: 0.96 0.005 80;
+    --sidebar-primary: 0.72 0.12 75;
+    --sidebar-primary-foreground: 0.15 0.01 250;
+    --sidebar-accent: 0.28 0.01 250;
+    --sidebar-accent-foreground: 0.96 0.005 80;
+    --sidebar-border: 1 0 0 / 10%;
+    --sidebar-ring: 0.72 0.12 75;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+
+  .font-body {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  .text-gold {
+    color: oklch(var(--gold));
+  }
+
+  .bg-gold {
+    background-color: oklch(var(--gold));
+  }
+
+  .bg-gold-light {
+    background-color: oklch(var(--gold-light));
+  }
+
+  .bg-gold-dark {
+    background-color: oklch(var(--gold-dark));
+  }
+
+  .border-gold {
+    border-color: oklch(var(--gold));
+  }
+
+  .text-steel {
+    color: oklch(var(--steel));
+  }
+
+  .bg-steel {
+    background-color: oklch(var(--steel));
+  }
+
+  .bg-steel-dark {
+    background-color: oklch(var(--steel-dark));
+  }
+
+  .card-shadow {
+    box-shadow: 0 4px 24px 0 rgba(0,0,0,0.08), 0 1px 4px 0 rgba(0,0,0,0.04);
+  }
+
+  .card-shadow-hover {
+    box-shadow: 0 12px 40px 0 rgba(0,0,0,0.14), 0 2px 8px 0 rgba(0,0,0,0.06);
+  }
+
+  .gold-gradient {
+    background: linear-gradient(135deg, oklch(0.72 0.12 75) 0%, oklch(0.55 0.13 72) 100%);
+  }
+
+  .hero-gradient {
+    background: linear-gradient(135deg, oklch(0.22 0.01 250) 0%, oklch(0.32 0.02 250) 60%, oklch(0.38 0.03 260) 100%);
+  }
+
+  .section-alt {
+    background-color: oklch(0.97 0.005 80);
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes starFill {
+    from { opacity: 0; transform: scale(0.5); }
+    to { opacity: 1; transform: scale(1); }
+  }
+
+  @keyframes pulse-gold {
+    0%, 100% { box-shadow: 0 0 0 0 oklch(0.72 0.12 75 / 0.4); }
+    50% { box-shadow: 0 0 0 12px oklch(0.72 0.12 75 / 0); }
+  }
+
+  @keyframes bounce-gentle {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+
+  .animate-star-fill {
+    animation: starFill 0.4s ease-out forwards;
+  }
+
+  .animate-pulse-gold {
+    animation: pulse-gold 2s infinite;
+  }
+
+  .animate-bounce-gentle {
+    animation: bounce-gentle 2s ease-in-out infinite;
+  }
+
+  .opacity-0-init {
+    opacity: 0;
+  }
+
+  .product-card:hover .product-img {
+    transform: scale(1.08);
+  }
+
+  .product-img {
+    transition: transform 0.4s ease;
+  }
+}

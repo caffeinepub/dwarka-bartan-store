@@ -1,0 +1,19 @@
+{
+  "frontend/index.html": "HTML entry point with full SEO metadata including meta title, description, keywords for local search, Open Graph tags, and Google Fonts preconnect for Playfair Display and Inter.",
+  "frontend/src/index.css": "Global styles with OKLCH color system featuring gold, steel gray, and white palette; custom utility classes for gradients, card shadows, animations (fadeInUp, starFill, pulse-gold, bounce-gentle), and smooth scroll behavior.",
+  "frontend/tailwind.config.js": "Extended Tailwind config with Playfair Display/Inter font families, gold and steel custom color tokens, card shadow variants, and custom keyframe animations for the warm premium theme.",
+  "frontend/src/hooks/useQueries.ts": "React Query mutation hook for submitting customer enquiries to the backend canister via the submitEnquiry method.",
+  "frontend/src/App.tsx": "Main app component that composes all page sections (FestiveOfferBanner, Header, HeroSection, ProductCategories, WhyChooseUs, CustomerReviews, LocationSection, ContactForm, Footer) plus floating conversion elements (FloatingWhatsAppButton, MobileCallBar, ExitIntentPopup).",
+  "frontend/src/components/FestiveOfferBanner.tsx": "Dismissible top banner with gold background announcing festive offers and a click-to-call link to +91 9419100159.",
+  "frontend/src/components/Header.tsx": "Sticky fixed header with business branding, desktop navigation links with smooth scroll, mobile hamburger Sheet menu, and a prominent gold Call Now button.",
+  "frontend/src/components/HeroSection.tsx": "Full-screen hero section with trust badges, headline, CTA buttons, and trust stats showing updated counters — \"20,000+ Happy Families\", \"5,000+ Products\", and \"50+ Years of Trust\" — plus a hero image with a floating store info card.",
+  "frontend/src/components/ProductCategories.tsx": "Interactive product categories section with 6 animated cards in a responsive 2/3-column grid, hover zoom effects on images, and WhatsApp Enquire Now buttons with pre-filled category-specific messages.",
+  "frontend/src/components/WhyChooseUs.tsx": "Why Choose Us section with 5 scroll-animated trust point cards featuring gold icons, plus a gold gradient CTA banner at the bottom.",
+  "frontend/src/components/CustomerReviews.tsx": "Customer reviews section with 5 testimonial cards featuring animated star ratings triggered by Intersection Observer on scroll entry.",
+  "frontend/src/components/LocationSection.tsx": "Location section with embedded Google Maps iframe, updated address card showing \"Opposite Punjab National Bank, Akhnoor, Jammu & Kashmir, India\", updated section description, click-to-call phone link, business hours, and a Get Directions button with updated map query URL.",
+  "frontend/src/components/ContactForm.tsx": "Contact and lead generation section with a validated enquiry form (Name, Phone, Message, Request Callback), backend submission via useSubmitEnquiry, WhatsApp redirect on submit, and direct contact options.",
+  "frontend/src/components/FloatingWhatsAppButton.tsx": "Fixed floating WhatsApp button at bottom-right with green styling, ping animation, and pre-filled WhatsApp message link.",
+  "frontend/src/components/MobileCallBar.tsx": "Fixed bottom Call Now bar visible only on mobile (hidden on md+ breakpoints) with gold styling linking to tel:+919419100159.",
+  "frontend/src/components/ExitIntentPopup.tsx": "Exit-intent popup Dialog triggered by mouse leaving viewport on desktop or after 30 seconds on mobile, offering bulk order discount with WhatsApp and Call CTA buttons.",
+  "frontend/src/components/Footer.tsx": "Full footer with brand info updated to show \"Opp. Punjab National Bank, Akhnoor, J&K\" address and \"50+ years\" trust reference in the brand description, quick navigation links, product categories, contact CTAs, copyright with dynamic year, and caffeine.ai attribution."
+}

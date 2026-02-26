@@ -1,0 +1,278 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 9,
+  "summary": "Business website for Dwarka Bartan Store — a kitchen utensils & household store in Main Market, Akhnoor, Jammu & Kashmir, India. User wants a new version of the site with different features, a new color combination, and a custom logo designed for the brand.",
+  "architectural_notes": [
+    "Warm color scheme: gold accents, steel gray, white background",
+    "Mobile-first responsive design with sticky header and smooth scroll animations",
+    "Meta Title: 'Utensil Shop in Akhnoor | Dwarka Bartan Store' | Tagline: 'Quality Utensils for Every Home'",
+    "Location: Opposite Punjab National Bank, Akhnoor, J&K, India",
+    "Trust badge: 'Trusted for 50+ Years' (not 10+)"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-apply-a-warm-premium-visual-theme-across-the-entire-site-gold-accent-color-c9a84c-or-similar-warm-gold-steel-gray-4a4a4a-and-white-ffffff-background-use-modern-clean-sans-serif-typography-for-headings-and-body-ensure-consistent-spacing-card-shadows-and-smooth-css-scroll-behavior-all-sections-must-be-fully-responsive-and-mobile-first",
+      "title": "Apply a warm, premium visual theme across the entire site: gold accent color (#C9A84C or similar warm gold), steel gray (#4A4A4A), and white (#FFFFFF) background. Use modern clean sans-serif typography for headings and body. Ensure consistent spacing, card shadows, and smooth CSS scroll-behavior. All sections must be fully responsive and mobile-first.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-sticky-header-that-remains-fixed-at-the-top-on-scroll-it-must-display-the-business-name-dwarka-bartan-store-tagline-quality-utensils-for-every-home-and-navigation-links-home-products-why-us-reviews-contact-on-mobile-collapse-navigation-into-a-hamburger-menu-include-a-prominent-call-now-button-in-the-header-linking-to-tel-919419100159",
+      "title": "Implement a sticky header that remains fixed at the top on scroll. It must display the business name 'Dwarka Bartan Store', tagline 'Quality Utensils for Every Home', and navigation links (Home, Products, Why Us, Reviews, Contact). On mobile, collapse navigation into a hamburger menu. Include a prominent 'Call Now' button in the header linking to tel:+919419100159.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-hero-section-with-headline-akhnoor-s-most-trusted-utensil-store-subheadline-premium-quality-kitchen-utensils-and-cookware-at-affordable-prices-three-cta-buttons-call-now-linking-to-tel-919419100159-whatsapp-now-linking-to-https-wa-me-919419100159-get-directions-linking-to-google-maps-for-main-market-akhnoor-a-trust-badge-reading-serving-akhnoor-families-for-years-an-offer-ribbon-reading-bulk-orders-available-and-the-hero-product-image-hero-utensils-dim-1200x600-png-as-the-featured-background-or-foreground-image",
+      "title": "Build a Hero section with: headline 'Akhnoor's Most Trusted Utensil Store', subheadline 'Premium quality kitchen utensils and cookware at affordable prices.', three CTA buttons (Call Now linking to tel:+919419100159, WhatsApp Now linking to https://wa.me/919419100159, Get Directions linking to Google Maps for Main Market Akhnoor), a trust badge reading 'Serving Akhnoor Families for Years', an offer ribbon reading 'Bulk Orders Available', and the hero product image (hero-utensils.dim_1200x600.png) as the featured background or foreground image.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-an-interactive-product-categories-section-with-animated-cards-for-stainless-steel-utensils-pressure-cookers-cookware-sets-kitchen-tools-plastic-household-items-and-gift-items-each-card-must-include-a-product-image-hover-zoom-effect-css-transform-scale-a-short-1-2-sentence-description-and-an-enquire-now-button-that-opens-whatsapp-at-https-wa-me-919419100159-with-a-pre-filled-message-referencing-the-product-category-use-the-generated-product-category-images",
+      "title": "Build an interactive Product Categories section with animated cards for: Stainless Steel Utensils, Pressure Cookers, Cookware Sets, Kitchen Tools, Plastic Household Items, and Gift Items. Each card must include a product image, hover zoom effect (CSS transform scale), a short 1-2 sentence description, and an 'Enquire Now' button that opens WhatsApp at https://wa.me/919419100159 with a pre-filled message referencing the product category. Use the generated product category images.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-why-choose-dwarka-bartan-store-section-with-animated-icons-fade-in-or-slide-in-on-scroll-for-each-of-genuine-and-durable-products-best-prices-in-akhnoor-wide-variety-available-friendly-customer-service-trusted-by-1000-families-use-gold-colored-icons-or-checkmark-badges-alongside-each-point",
+      "title": "Build a 'Why Choose Dwarka Bartan Store' section with animated icons (fade-in or slide-in on scroll) for each of: Genuine and Durable Products, Best Prices in Akhnoor, Wide Variety Available, Friendly Customer Service, Trusted by 1000+ Families. Use gold-colored icons or checkmark badges alongside each point.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-customer-reviews-section-displaying-4-5-testimonials-with-5-star-animated-star-ratings-use-these-sample-reviews-1-best-utensil-shop-in-akhnoor-with-reasonable-prices-by-rajesh-k-2-amazing-quality-stainless-steel-products-by-sunita-d-3-very-polite-owner-and-great-service-by-mohd-arif-4-my-go-to-kitchen-store-for-everything-by-priya-s-5-great-variety-and-fast-service-by-anil-v-stars-should-animate-in-fill-or-pulse-on-scroll-entry",
+      "title": "Build a Customer Reviews section displaying 4-5 testimonials with 5-star animated star ratings. Use these sample reviews: (1) 'Best utensil shop in Akhnoor with reasonable prices.' by Rajesh K., (2) 'Amazing quality stainless steel products.' by Sunita D., (3) 'Very polite owner and great service.' by Mohd. Arif, (4) 'My go-to kitchen store for everything.' by Priya S., (5) 'Great variety and fast service!' by Anil V. Stars should animate in (fill or pulse) on scroll entry.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-location-section-that-includes-an-embedded-google-map-iframe-centered-on-main-market-akhnoor-jammu-and-kashmir-use-standard-google-maps-embed-url-for-akhnoor-business-hours-listing-mon-sat-9-00-am-to-8-00-pm-sunday-10-00-am-to-6-00-pm-a-click-to-call-phone-link-91-9419100159-and-a-get-directions-button-linking-to-google-maps-directions-for-main-market-akhnoor",
+      "title": "Build a Location section that includes: an embedded Google Map iframe centered on Main Market, Akhnoor, Jammu and Kashmir (use standard Google Maps embed URL for Akhnoor), business hours listing (Mon-Sat: 9:00 AM to 8:00 PM, Sunday: 10:00 AM to 6:00 PM), a click-to-call phone link (+91 9419100159), and a 'Get Directions' button linking to Google Maps directions for Main Market, Akhnoor.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-contact-and-lead-generation-section-with-an-enquiry-form-containing-fields-name-text-phone-number-tel-message-textarea-and-a-request-a-call-back-checkbox-on-form-submission-open-a-whatsapp-message-to-https-wa-me-919419100159-pre-filled-with-the-form-data-include-an-instant-whatsapp-chat-button-below-the-form-store-enquiry-submissions-in-the-backend-canister-with-fields-name-phone-message-requestcallback-bool-and-timestamp",
+      "title": "Build a Contact and Lead Generation section with an enquiry form containing fields: Name (text), Phone Number (tel), Message (textarea), and a 'Request a Call Back' checkbox. On form submission, open a WhatsApp message to https://wa.me/919419100159 pre-filled with the form data. Include an 'Instant WhatsApp Chat' button below the form. Store enquiry submissions in the backend canister with fields: name, phone, message, requestCallback (Bool), and timestamp.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-conversion-boosters-1-a-festive-offer-banner-at-the-top-of-the-page-with-text-limited-time-festive-offer-call-now-for-best-deals-91-9419100159-with-a-dismiss-button-2-an-exit-intent-popup-triggered-on-mouse-leaving-the-viewport-on-desktop-or-after-30-seconds-on-mobile-showing-wait-get-special-discount-on-bulk-orders-whatsapp-us-now-with-a-whatsapp-cta-button-linking-to-https-wa-me-919419100159-3-a-floating-whatsapp-button-fixed-at-bottom-right-always-visible-linking-to-https-wa-me-919419100159-4-a-fixed-call-now-bar-at-the-bottom-of-the-screen-on-mobile-viewports-only-linking-to-tel-919419100159",
+      "title": "Add conversion boosters: (1) A festive offer banner at the top of the page with text 'Limited Time Festive Offer - Call Now for Best Deals! +91 9419100159' with a dismiss button; (2) An exit-intent popup triggered on mouse leaving the viewport on desktop or after 30 seconds on mobile, showing 'Wait! Get Special Discount on Bulk Orders - WhatsApp Us Now' with a WhatsApp CTA button linking to https://wa.me/919419100159; (3) A floating WhatsApp button fixed at bottom-right always visible linking to https://wa.me/919419100159; (4) A fixed 'Call Now' bar at the bottom of the screen on mobile viewports only linking to tel:+919419100159.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-set-seo-metadata-in-the-frontend-html-head-meta-title-utensil-shop-in-akhnoor-dwarka-bartan-store-meta-description-dwarka-bartan-store-is-akhnoor-trusted-utensil-shop-offering-stainless-steel-utensils-cookware-pressure-cookers-and-kitchen-essentials-at-best-prices-call-9419100159-and-a-keywords-meta-tag-for-local-seo-including-utensil-shop-akhnoor-bartan-store-near-me-kitchen-utensils-shop-akhnoor-pressure-cooker-shop-akhnoor-use-semantic-html5-headings-with-h1-for-the-hero-headline-only-and-h2-for-all-major-section-headings",
+      "title": "Set SEO metadata in the frontend HTML head: meta title 'Utensil Shop in Akhnoor | Dwarka Bartan Store', meta description 'Dwarka Bartan Store is Akhnoor trusted utensil shop offering stainless steel utensils, cookware, pressure cookers and kitchen essentials at best prices. Call 9419100159.', and a keywords meta tag for local SEO including: utensil shop Akhnoor, bartan store near me, kitchen utensils shop Akhnoor, pressure cooker shop Akhnoor. Use semantic HTML5 headings with H1 for the hero headline only and H2 for all major section headings.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-in-the-location-section-locationsection-tsx-update-the-store-address-to-opposite-punjab-national-bank-akhnoor-wherever-the-address-is-displayed-also-update-any-address-references-in-the-footer-footer-tsx-and-any-other-components-that-display-the-store-s-physical-location",
+      "title": "In the Location section (LocationSection.tsx), update the store address to 'Opposite Punjab National Bank, Akhnoor' wherever the address is displayed. Also update any address references in the Footer (Footer.tsx) and any other components that display the store's physical location.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-all-instances-of-trusted-by-10-years-or-serving-akhnoor-families-for-10-years-or-any-similar-phrasing-referencing-10-years-across-all-frontend-components-herosection-tsx-whychooseus-tsx-footer-tsx-header-tsx-etc-to-read-trusted-since-50-years-or-serving-akhnoor-families-for-50-years-as-contextually-appropriate",
+      "title": "Update all instances of 'Trusted by 10+ Years' or 'Serving Akhnoor Families for 10+ Years' or any similar phrasing referencing '10 years' across all frontend components (HeroSection.tsx, WhyChooseUs.tsx, Footer.tsx, Header.tsx, etc.) to read 'Trusted Since 50+ Years' or 'Serving Akhnoor Families for 50+ Years' as contextually appropriate.",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-completely-new-visual-theme-across-the-entire-site-using-a-deep-emerald-green-1b6b4a-or-similar-as-the-primary-accent-warm-cream-fff8ee-as-the-background-and-rich-mahogany-dark-brown-3b1f0f-for-text-and-headings-replace-all-existing-gold-steel-gray-color-tokens-in-index-css-tailwind-config-js-and-all-component-files-use-a-bold-serif-font-e-g-merriweather-or-lora-for-headings-paired-with-a-clean-sans-serif-e-g-nunito-for-body-text-ensure-the-new-palette-is-applied-consistently-across-header-hero-product-cards-sections-footer-and-all-ctas",
+      "title": "Apply a completely new visual theme across the entire site using a deep emerald green (#1B6B4A or similar) as the primary accent, warm cream (#FFF8EE) as the background, and rich mahogany/dark brown (#3B1F0F) for text and headings. Replace all existing gold/steel-gray color tokens in index.css, tailwind.config.js, and all component files. Use a bold serif font (e.g., Merriweather or Lora) for headings paired with a clean sans-serif (e.g., Nunito) for body text. Ensure the new palette is applied consistently across header, hero, product cards, sections, footer, and all CTAs.",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-design-and-add-a-custom-svg-logo-for-dwarka-bartan-store-to-the-website-the-logo-must-incorporate-a-stylized-cooking-pot-or-utensil-icon-the-business-name-dwarka-bartan-store-in-bold-serif-lettering-and-the-tagline-quality-utensils-for-every-home-in-smaller-sans-serif-text-use-the-new-emerald-green-and-cream-color-palette-display-the-logo-in-the-header-replacing-any-plain-text-the-footer-and-in-the-browser-tab-favicon-save-the-logo-as-a-generated-static-asset-and-reference-it-from-frontend-public-assets-generated",
+      "title": "Design and add a custom SVG logo for Dwarka Bartan Store to the website. The logo must incorporate a stylized cooking pot or utensil icon, the business name 'Dwarka Bartan Store' in bold serif lettering, and the tagline 'Quality Utensils for Every Home' in smaller sans-serif text. Use the new emerald green and cream color palette. Display the logo in the Header (replacing any plain text), the Footer, and in the browser tab favicon. Save the logo as a generated static asset and reference it from frontend/public/assets/generated/.",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-the-current-hero-section-with-a-split-layout-hero-left-side-contains-the-headline-akhnoor-s-premium-kitchen-store-a-subheadline-discover-50-years-of-trust-finest-utensils-cookware-more-a-shop-now-on-whatsapp-cta-button-linking-to-https-wa-me-919419100159-and-a-secondary-call-91-9419100159-link-plus-an-animated-counter-row-showing-5000-happy-customers-500-products-50-years-right-side-displays-the-hero-product-image-as-a-styled-showcase-card-with-a-floating-badge-reading-bulk-orders-welcome-use-the-new-emerald-and-cream-theme",
+      "title": "Replace the current Hero section with a split-layout hero: left side contains the headline 'Akhnoor's Premium Kitchen Store', a subheadline 'Discover 50+ Years of Trust — Finest Utensils, Cookware & More', a 'Shop Now on WhatsApp' CTA button linking to https://wa.me/919419100159 and a secondary 'Call +91 9419100159' link, plus an animated counter row showing '5000+ Happy Customers', '500+ Products', '50+ Years'. Right side displays the hero product image as a styled showcase card with a floating badge reading 'Bulk Orders Welcome'. Use the new emerald and cream theme.",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-new-featured-products-showcase-section-that-displays-individual-product-items-not-just-categories-in-a-masonry-style-or-pinterest-style-grid-include-at-least-8-product-cards-with-product-name-a-short-description-a-price-range-label-e-g-199-999-and-a-buy-via-whatsapp-button-linking-to-https-wa-me-919419100159-with-a-pre-filled-message-for-that-product-products-to-include-steel-tiffin-box-pressure-cooker-5l-non-stick-kadai-steel-glass-set-casserole-set-mixing-bowls-set-vegetable-chopper-and-stainless-steel-thali-add-hover-card-flip-or-tilt-effect-using-css-transforms",
+      "title": "Build a new 'Featured Products Showcase' section that displays individual product items (not just categories) in a masonry-style or Pinterest-style grid. Include at least 8 product cards with product name, a short description, a price range label (e.g., '₹199 – ₹999'), and a 'Buy via WhatsApp' button linking to https://wa.me/919419100159 with a pre-filled message for that product. Products to include: Steel Tiffin Box, Pressure Cooker (5L), Non-Stick Kadai, Steel Glass Set, Casserole Set, Mixing Bowls Set, Vegetable Chopper, and Stainless Steel Thali. Add hover card-flip or tilt effect using CSS transforms.",
+      "reqIds": [
+        "REQ-16"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-special-offers-deals-section-that-displays-3-promotional-offer-cards-offer-1-bulk-order-discount-10-off-on-orders-above-5-000-offer-2-free-delivery-on-orders-above-2-000-in-akhnoor-offer-3-festive-gift-sets-starting-at-499-each-card-must-have-a-countdown-style-visual-element-static-decorative-badge-not-a-real-timer-an-offer-icon-the-offer-text-and-a-claim-on-whatsapp-button-linking-to-https-wa-me-919419100159-with-a-pre-filled-offer-claim-message-use-vibrant-accent-colors-within-the-new-emerald-cream-theme-for-each-card",
+      "title": "Add a 'Special Offers & Deals' section that displays 3 promotional offer cards. Offer 1: 'Bulk Order Discount — 10% off on orders above ₹5,000'. Offer 2: 'Free Delivery on Orders above ₹2,000 in Akhnoor'. Offer 3: 'Festive Gift Sets Starting at ₹499'. Each card must have a countdown-style visual element (static decorative badge, not a real timer), an offer icon, the offer text, and a 'Claim on WhatsApp' button linking to https://wa.me/919419100159 with a pre-filled offer claim message. Use vibrant accent colors within the new emerald/cream theme for each card.",
+      "reqIds": [
+        "REQ-17"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-photo-gallery-section-showcasing-a-grid-of-product-and-store-images-display-6-images-in-a-responsive-masonry-or-equal-grid-layout-with-a-lightbox-style-hover-overlay-that-shows-the-image-name-and-a-enquire-on-whatsapp-button-linking-to-https-wa-me-919419100159-use-generated-placeholder-product-images-for-the-gallery-include-a-section-heading-our-store-products-and-a-short-intro-paragraph",
+      "title": "Add a 'Photo Gallery' section showcasing a grid of product and store images. Display 6 images in a responsive masonry or equal-grid layout with a lightbox-style hover overlay that shows the image name and a 'Enquire on WhatsApp' button linking to https://wa.me/919419100159. Use generated placeholder product images for the gallery. Include a section heading 'Our Store & Products' and a short intro paragraph.",
+      "reqIds": [
+        "REQ-18"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-the-current-why-choose-us-section-with-a-new-our-promise-to-you-section-featuring-a-timeline-style-horizontal-layout-on-desktop-and-vertical-on-mobile-each-timeline-node-should-represent-a-promise-50-years-of-legacy-genuine-isi-marked-products-lowest-prices-guaranteed-home-delivery-available-after-sale-support-each-node-includes-an-icon-title-and-2-sentence-description-animate-nodes-to-slide-in-from-alternating-sides-on-scroll-using-intersectionobserver",
+      "title": "Replace the current 'Why Choose Us' section with a new 'Our Promise to You' section featuring a timeline-style horizontal layout on desktop and vertical on mobile. Each timeline node should represent a promise: '50+ Years of Legacy', 'Genuine ISI-Marked Products', 'Lowest Prices Guaranteed', 'Home Delivery Available', 'After-Sale Support'. Each node includes an icon, title, and 2-sentence description. Animate nodes to slide in from alternating sides on scroll using IntersectionObserver.",
+      "reqIds": [
+        "REQ-19"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-brand-partners-we-stock-these-brands-section-displaying-logos-or-name-badges-for-popular-kitchenware-brands-sold-at-the-store-include-at-least-6-brand-names-hawkins-prestige-pigeon-milton-borosil-and-cello-display-them-as-styled-pill-badge-elements-or-logo-cards-in-a-horizontally-scrolling-marquee-row-on-mobile-and-a-centered-flex-wrap-row-on-desktop-add-a-heading-trusted-brands-we-carry-and-a-short-tagline",
+      "title": "Add a 'Brand Partners' / 'We Stock These Brands' section displaying logos or name badges for popular kitchenware brands sold at the store. Include at least 6 brand names: Hawkins, Prestige, Pigeon, Milton, Borosil, and Cello. Display them as styled pill/badge elements or logo cards in a horizontally scrolling marquee row on mobile and a centered flex-wrap row on desktop. Add a heading 'Trusted Brands We Carry' and a short tagline.",
+      "reqIds": [
+        "REQ-20"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-the-current-festive-offer-banner-and-exit-intent-popup-with-updated-versions-matching-the-new-emerald-cream-color-theme-update-the-floating-whatsapp-button-to-use-the-new-accent-color-style-replace-the-mobile-call-bar-design-to-match-the-new-theme-ensure-all-conversion-booster-elements-are-consistent-with-the-redesigned-color-palette",
+      "title": "Replace the current festive offer banner and exit-intent popup with updated versions matching the new emerald/cream color theme. Update the floating WhatsApp button to use the new accent color style. Replace the mobile call bar design to match the new theme. Ensure all conversion booster elements are consistent with the redesigned color palette.",
+      "reqIds": [
+        "REQ-21"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-footer-to-match-the-new-emerald-cream-theme-replacing-all-gold-gray-color-references-add-a-new-quick-links-column-and-a-popular-products-column-listing-steel-tiffin-box-pressure-cooker-non-stick-kadai-casserole-set-steel-glass-set-keep-the-existing-store-address-opposite-punjab-national-bank-akhnoor-phone-number-91-9419100159-business-hours-and-whatsapp-cta-add-social-proof-text-trusted-by-5000-families-in-akhnoor-since-1975",
+      "title": "Update the Footer to match the new emerald/cream theme, replacing all gold/gray color references. Add a new 'Quick Links' column and a 'Popular Products' column listing Steel Tiffin Box, Pressure Cooker, Non-Stick Kadai, Casserole Set, Steel Glass Set. Keep the existing store address 'Opposite Punjab National Bank, Akhnoor', phone number +91 9419100159, business hours, and WhatsApp CTA. Add social proof text: 'Trusted by 5000+ Families in Akhnoor since 1975'.",
+      "reqIds": [
+        "REQ-22"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-in-herosection-tsx-update-the-animated-counter-row-values-change-5000-happy-customers-or-happy-families-to-20-000-happy-families-and-change-500-products-to-5-000-products-ensure-the-counter-labels-and-animated-number-targets-reflect-these-new-values-throughout-the-component",
+      "title": "In HeroSection.tsx, update the animated counter row values: change '5000+ Happy Customers' (or 'Happy Families') to '20,000+ Happy Families', and change '500+ Products' to '5,000+ Products'. Ensure the counter labels and animated number targets reflect these new values throughout the component.",
+      "reqIds": [
+        "REQ-23"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Hero section with headline, CTA buttons (Call Now, WhatsApp Now, Get Directions), trust badge, offer ribbon, and product images",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Interactive product categories section with animated cards (Stainless Steel Utensils, Pressure Cookers, Cookware Sets, Kitchen Tools, Plastic Household Items, Gift Items) with hover zoom and Enquire Now button",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Why Choose Us section with animated icons highlighting key trust points",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Customer reviews section with 4-5 testimonials and animated star ratings",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Location section with embedded Google Map, business hours, click-to-call, and directions button",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Contact & lead generation section with enquiry form (Name, Phone, Message), Request a Call Back option, and WhatsApp chat feature",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Conversion boosters: festive offer banner, exit intent popup, floating WhatsApp button, fixed Call Now button on mobile",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "SEO optimization: meta title, meta description, local SEO-optimized headings and content",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-9",
+      "summary": "Redesign website with a new color combination (different from current gold/steel gray/white scheme)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-10",
+      "summary": "Add new/different features to the website (distinct from the current version's feature set)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-11",
+      "summary": "Design and add a custom logo for Dwarka Bartan Store to the website",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-12",
+      "summary": "Update animated counters: change '5000+ Happy Customers' to '20,000+ Happy Families' and '500+ Products' to '5000+ Products'",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Dwarka Bartan Store",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}
